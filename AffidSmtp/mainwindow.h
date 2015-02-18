@@ -4,6 +4,7 @@
 #include <QMainWindow>
 
 class ConfigurationSesamVitale;
+class CurlInterprete;
 
 namespace Ui {
 class MainWindow;
@@ -20,6 +21,7 @@ public:
 private:
     Ui::MainWindow *ui;
     ConfigurationSesamVitale *configure;
+    CurlInterprete * interpreteCurl;
 
 private slots:
     void listerMails();

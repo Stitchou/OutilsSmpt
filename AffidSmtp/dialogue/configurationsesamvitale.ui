@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>753</width>
-    <height>667</height>
+    <height>699</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -102,7 +102,7 @@
      <x>20</x>
      <y>160</y>
      <width>591</width>
-     <height>421</height>
+     <height>451</height>
     </rect>
    </property>
    <property name="title">
@@ -117,7 +117,7 @@
       <x>70</x>
       <y>40</y>
       <width>151</width>
-      <height>361</height>
+      <height>401</height>
      </rect>
     </property>
     <property name="title">
@@ -149,7 +149,7 @@
       <x>230</x>
       <y>40</y>
       <width>351</width>
-      <height>361</height>
+      <height>401</height>
      </rect>
     </property>
     <property name="title">
@@ -266,7 +266,7 @@
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>320</y>
+       <y>370</y>
        <width>61</width>
        <height>21</height>
       </rect>
@@ -279,7 +279,7 @@
      <property name="geometry">
       <rect>
        <x>190</x>
-       <y>320</y>
+       <y>370</y>
        <width>71</width>
        <height>21</height>
       </rect>
@@ -292,7 +292,7 @@
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>270</y>
+       <y>290</y>
        <width>251</width>
        <height>17</height>
       </rect>
@@ -305,7 +305,7 @@
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>290</y>
+       <y>330</y>
        <width>261</width>
        <height>17</height>
       </rect>
@@ -373,6 +373,9 @@
        <height>20</height>
       </rect>
      </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
     </widget>
     <widget class="QLabel" name="label_12">
      <property name="geometry">
@@ -396,12 +399,15 @@
        <height>20</height>
       </rect>
      </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
     </widget>
     <widget class="QLineEdit" name="identifiantconnexion">
      <property name="geometry">
       <rect>
        <x>90</x>
-       <y>320</y>
+       <y>370</y>
        <width>81</width>
        <height>20</height>
       </rect>
@@ -411,10 +417,56 @@
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>320</y>
+       <y>370</y>
        <width>81</width>
        <height>20</height>
       </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="profil">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="fournisseur">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>110</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="popAUTH">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>270</y>
+       <width>251</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Le serveur POP requiert une connexion sécurisée</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="smtpSSL">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>310</y>
+       <width>251</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Le serveur SMTP requiert une connexion SSL</string>
      </property>
     </widget>
    </widget>
@@ -423,7 +475,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>590</y>
+     <y>630</y>
      <width>591</width>
      <height>61</height>
     </rect>
@@ -451,7 +503,40 @@
     </property>
    </widget>
   </widget>
+  <widget class="QPushButton" name="tester">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>290</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tester</string>
+   </property>
+  </widget>
  </widget>
+ <tabstops>
+  <tabstop>profil</tabstop>
+  <tabstop>identifiant</tabstop>
+  <tabstop>password</tabstop>
+  <tabstop>fournisseur</tabstop>
+  <tabstop>mail</tabstop>
+  <tabstop>popServeur</tabstop>
+  <tabstop>smtpServeur</tabstop>
+  <tabstop>popPort</tabstop>
+  <tabstop>smtpPort</tabstop>
+  <tabstop>smtpAuth</tabstop>
+  <tabstop>parametresConnexion</tabstop>
+  <tabstop>identifiantconnexion</tabstop>
+  <tabstop>passwordConnexion</tabstop>
+  <tabstop>valider</tabstop>
+  <tabstop>annuler</tabstop>
+  <tabstop>aide</tabstop>
+  <tabstop>radioButton</tabstop>
+  <tabstop>checkBox</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

@@ -1,0 +1,17 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\configurationsesamvitale.o
+./release\configuration.o
+./release\curlinterprete.o
+./release\progression.o
+./release\traitementthread.o
+./release\envoyermail.o
+./release\moc_mainwindow.o
+./release\moc_configurationsesamvitale.o
+./release\moc_configuration.o
+./release\moc_curlinterprete.o
+./release\moc_progression.o
+./release\moc_traitementthread.o
+./release\moc_envoyermail.o
+);

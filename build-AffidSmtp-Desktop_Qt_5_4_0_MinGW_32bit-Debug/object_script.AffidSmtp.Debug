@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\configurationsesamvitale.o
+./debug\configuration.o
+./debug\curlinterprete.o
+./debug\progression.o
+./debug\traitementthread.o
+./debug\envoyermail.o
+./debug\moc_mainwindow.o
+./debug\moc_configurationsesamvitale.o
+./debug\moc_configuration.o
+./debug\moc_curlinterprete.o
+./debug\moc_progression.o
+./debug\moc_traitementthread.o
+./debug\moc_envoyermail.o
+);

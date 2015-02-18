@@ -58,14 +58,19 @@ public:
     QLineEdit *smtpPort;
     QLineEdit *identifiantconnexion;
     QLineEdit *passwordConnexion;
+    QLineEdit *profil;
+    QLineEdit *fournisseur;
+    QCheckBox *popAUTH;
+    QCheckBox *smtpSSL;
     QGroupBox *groupBox_5;
     QCheckBox *checkBox;
+    QPushButton *tester;
 
     void setupUi(QDialog *ConfigurationSesamVitale)
     {
         if (ConfigurationSesamVitale->objectName().isEmpty())
             ConfigurationSesamVitale->setObjectName(QStringLiteral("ConfigurationSesamVitale"));
-        ConfigurationSesamVitale->resize(753, 667);
+        ConfigurationSesamVitale->resize(753, 699);
         ConfigurationSesamVitale->setStyleSheet(QLatin1String("QGroupBox\n"
 "{\n"
 "	border: 0.5px solid;\n"
@@ -92,11 +97,11 @@ public:
         label->setAlignment(Qt::AlignCenter);
         groupBox_2 = new QGroupBox(ConfigurationSesamVitale);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
-        groupBox_2->setGeometry(QRect(20, 160, 591, 421));
+        groupBox_2->setGeometry(QRect(20, 160, 591, 451));
         groupBox_2->setAlignment(Qt::AlignCenter);
         groupBox_3 = new QGroupBox(groupBox_2);
         groupBox_3->setObjectName(QStringLiteral("groupBox_3"));
-        groupBox_3->setGeometry(QRect(70, 40, 151, 361));
+        groupBox_3->setGeometry(QRect(70, 40, 151, 401));
         groupBox_3->setAlignment(Qt::AlignCenter);
         radioButton = new QRadioButton(groupBox_3);
         radioButton->setObjectName(QStringLiteral("radioButton"));
@@ -104,7 +109,7 @@ public:
         radioButton->setChecked(true);
         groupBox_4 = new QGroupBox(groupBox_2);
         groupBox_4->setObjectName(QStringLiteral("groupBox_4"));
-        groupBox_4->setGeometry(QRect(230, 40, 351, 361));
+        groupBox_4->setGeometry(QRect(230, 40, 351, 401));
         groupBox_4->setAlignment(Qt::AlignCenter);
         label_2 = new QLabel(groupBox_4);
         label_2->setObjectName(QStringLiteral("label_2"));
@@ -132,16 +137,16 @@ public:
         label_9->setGeometry(QRect(30, 230, 61, 21));
         label_10 = new QLabel(groupBox_4);
         label_10->setObjectName(QStringLiteral("label_10"));
-        label_10->setGeometry(QRect(30, 320, 61, 21));
+        label_10->setGeometry(QRect(30, 370, 61, 21));
         label_11 = new QLabel(groupBox_4);
         label_11->setObjectName(QStringLiteral("label_11"));
-        label_11->setGeometry(QRect(190, 320, 71, 21));
+        label_11->setGeometry(QRect(190, 370, 71, 21));
         smtpAuth = new QCheckBox(groupBox_4);
         smtpAuth->setObjectName(QStringLiteral("smtpAuth"));
-        smtpAuth->setGeometry(QRect(70, 270, 251, 17));
+        smtpAuth->setGeometry(QRect(70, 290, 251, 17));
         parametresConnexion = new QCheckBox(groupBox_4);
         parametresConnexion->setObjectName(QStringLiteral("parametresConnexion"));
-        parametresConnexion->setGeometry(QRect(70, 290, 261, 17));
+        parametresConnexion->setGeometry(QRect(70, 330, 261, 17));
         identifiant = new QLineEdit(groupBox_4);
         identifiant->setObjectName(QStringLiteral("identifiant"));
         identifiant->setGeometry(QRect(150, 50, 191, 20));
@@ -160,26 +165,60 @@ public:
         popPort = new QLineEdit(groupBox_4);
         popPort->setObjectName(QStringLiteral("popPort"));
         popPort->setGeometry(QRect(150, 230, 51, 20));
+        popPort->setReadOnly(true);
         label_12 = new QLabel(groupBox_4);
         label_12->setObjectName(QStringLiteral("label_12"));
         label_12->setGeometry(QRect(230, 230, 61, 21));
         smtpPort = new QLineEdit(groupBox_4);
         smtpPort->setObjectName(QStringLiteral("smtpPort"));
         smtpPort->setGeometry(QRect(290, 230, 51, 20));
+        smtpPort->setReadOnly(true);
         identifiantconnexion = new QLineEdit(groupBox_4);
         identifiantconnexion->setObjectName(QStringLiteral("identifiantconnexion"));
-        identifiantconnexion->setGeometry(QRect(90, 320, 81, 20));
+        identifiantconnexion->setGeometry(QRect(90, 370, 81, 20));
         passwordConnexion = new QLineEdit(groupBox_4);
         passwordConnexion->setObjectName(QStringLiteral("passwordConnexion"));
-        passwordConnexion->setGeometry(QRect(260, 320, 81, 20));
+        passwordConnexion->setGeometry(QRect(260, 370, 81, 20));
+        profil = new QLineEdit(groupBox_4);
+        profil->setObjectName(QStringLiteral("profil"));
+        profil->setGeometry(QRect(150, 20, 191, 20));
+        fournisseur = new QLineEdit(groupBox_4);
+        fournisseur->setObjectName(QStringLiteral("fournisseur"));
+        fournisseur->setGeometry(QRect(150, 110, 191, 20));
+        popAUTH = new QCheckBox(groupBox_4);
+        popAUTH->setObjectName(QStringLiteral("popAUTH"));
+        popAUTH->setGeometry(QRect(70, 270, 251, 17));
+        smtpSSL = new QCheckBox(groupBox_4);
+        smtpSSL->setObjectName(QStringLiteral("smtpSSL"));
+        smtpSSL->setGeometry(QRect(70, 310, 251, 17));
         groupBox_5 = new QGroupBox(ConfigurationSesamVitale);
         groupBox_5->setObjectName(QStringLiteral("groupBox_5"));
-        groupBox_5->setGeometry(QRect(20, 590, 591, 61));
+        groupBox_5->setGeometry(QRect(20, 630, 591, 61));
         groupBox_5->setAlignment(Qt::AlignCenter);
         checkBox = new QCheckBox(groupBox_5);
         checkBox->setObjectName(QStringLiteral("checkBox"));
         checkBox->setGeometry(QRect(350, 20, 221, 21));
         checkBox->setLayoutDirection(Qt::RightToLeft);
+        tester = new QPushButton(ConfigurationSesamVitale);
+        tester->setObjectName(QStringLiteral("tester"));
+        tester->setGeometry(QRect(630, 290, 111, 31));
+        QWidget::setTabOrder(profil, identifiant);
+        QWidget::setTabOrder(identifiant, password);
+        QWidget::setTabOrder(password, fournisseur);
+        QWidget::setTabOrder(fournisseur, mail);
+        QWidget::setTabOrder(mail, popServeur);
+        QWidget::setTabOrder(popServeur, smtpServeur);
+        QWidget::setTabOrder(smtpServeur, popPort);
+        QWidget::setTabOrder(popPort, smtpPort);
+        QWidget::setTabOrder(smtpPort, smtpAuth);
+        QWidget::setTabOrder(smtpAuth, parametresConnexion);
+        QWidget::setTabOrder(parametresConnexion, identifiantconnexion);
+        QWidget::setTabOrder(identifiantconnexion, passwordConnexion);
+        QWidget::setTabOrder(passwordConnexion, valider);
+        QWidget::setTabOrder(valider, annuler);
+        QWidget::setTabOrder(annuler, aide);
+        QWidget::setTabOrder(aide, radioButton);
+        QWidget::setTabOrder(radioButton, checkBox);
 
         retranslateUi(ConfigurationSesamVitale);
 
@@ -214,8 +253,11 @@ public:
         smtpAuth->setText(QApplication::translate("ConfigurationSesamVitale", "Le serveur SMTP requiert une authentification", 0));
         parametresConnexion->setText(QApplication::translate("ConfigurationSesamVitale", "Utiliser des param\303\250tre de connexion identiques", 0));
         label_12->setText(QApplication::translate("ConfigurationSesamVitale", "Port SMTP", 0));
+        popAUTH->setText(QApplication::translate("ConfigurationSesamVitale", "Le serveur POP requiert une connexion s\303\251curis\303\251e", 0));
+        smtpSSL->setText(QApplication::translate("ConfigurationSesamVitale", "Le serveur SMTP requiert une connexion SSL", 0));
         groupBox_5->setTitle(QApplication::translate("ConfigurationSesamVitale", "Programmation de la t\303\251l\303\251transmission automatique", 0));
         checkBox->setText(QApplication::translate("ConfigurationSesamVitale", "Activer la trace de connexion", 0));
+        tester->setText(QApplication::translate("ConfigurationSesamVitale", "Tester", 0));
     } // retranslateUi
 
 };

@@ -3,6 +3,7 @@
 
 // importation des classes
 #include "./dialogue/configurationsesamvitale.h"
+#include "../curl/curlinterprete.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -14,6 +15,9 @@ MainWindow::MainWindow(QWidget *parent) :
     // pointeur de la classe de configuration
     configure = new ConfigurationSesamVitale;
 
+
+    // tuilisation de curl librarie
+    interpreteCurl = new CurlInterprete;
 
     connect(ui->lister, SIGNAL(clicked()), this, SLOT(listerMails()));
     connect(ui->envoyer, SIGNAL(clicked()), this, SLOT(envoyerMail()));
@@ -27,12 +31,12 @@ MainWindow::~MainWindow()
 
 void MainWindow::listerMails()
 {
-
+    interpreteCurl->listerMail();
 }
 
 void MainWindow::envoyerMail()
 {
-
+    interpreteCurl->envoyerNouveauMail();
 }
 
 void MainWindow::configurerSmtp()
