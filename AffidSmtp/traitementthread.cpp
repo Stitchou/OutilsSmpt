@@ -6,6 +6,7 @@
 #include <QtDebug>
 #include <QTextStream>
 #include <QDate>
+#include <QApplication>
 
 // variables globales
 int taille;
@@ -36,7 +37,7 @@ static char *payload_text[]  = {
   (char *) from.toStdString().c_str(),
   "Message-ID: <dcd7cb36-11db-487a-9f3a-e652a9458efd@rfcpedant.example.org>\r\n",
   (char *) objet.toStdString().c_str(),
-  "\r\n", /* empty line to divide headers from body, see RFC5322*/
+  "\r\n",
   (char *) body.toStdString().c_str(),
   "\r\n",
   "Check RFC5322.\r\n",
@@ -146,59 +147,52 @@ void TraitementThread::listerMail()
 void TraitementThread::reconstruireDataMail()
 {
       payload_text [0] = "Date: Mon, 29 Nov 2010 21:54:29 +1100\r\n";
-      payload_text [1] = (char *) to.toStdString().c_str();
-      payload_text [2] = (char *) from.toStdString().c_str();
+      payload_text [1] = (char *) to.toStdString().c_str() ;
+      payload_text [2] = (char *) from.toStdString().c_str() ;
       payload_text [3] = "Message-ID: < afid vitale >\r\n";
-      payload_text [4] = (char *) objet.toStdString().c_str();
+      payload_text [4] = (char *) objet.toStdString().c_str() ;
       payload_text [5] = "\r\n";
-      payload_text [6] = (char *) body.toStdString().c_str();
-      payload_text [7] = "\r\n";
-      payload_text [8] = "Check RFC5322.\r\n";
+      payload_text [6] = (char *) body.toStdString().c_str() ;
+      payload_text [7] = "\r\n.\r\n";
+      payload_text [8] = "\r\n Check RFC5322.\r\n";
       payload_text [9] = NULL ;
 
 }
 
 void TraitementThread::envoyerMail()
 {
-
-    qDebug() << (char *) payload_text;
     struct curl_slist *recipients = NULL;
     struct upload_status upload_ctx;
 
     upload_ctx.lines_read = 0;
 
     curl = curl_easy_init();
-    if(curl) {
+
+    if(curl)
+    {
         emit sendTraitementEnCours(QString("Envoie du mail en cours"));
+
         curl_easy_setopt(curl, CURLOPT_USERNAME,
                         configServeur->getIdentifiantConnexion().toStdString().c_str());
         curl_easy_setopt(curl, CURLOPT_PASSWORD,
                         configServeur->getMostDePasseConnexion().toStdString().c_str());
 
-        /* This is the URL for your mailserver. Note the use of smtps:// rather
-        * than smtp:// to request a SSL based connection. */
         QString adresseSMTP ;
         if(configServeur->getSmtpSecuriser())
         {
            adresseSMTP = "smtps://";
-           curl_easy_setopt(curl, CURLOPT_CAINFO, "./debug/certificat.pem");
-           //curl_easy_setopt(curl, CURLOPT_USE_SSL, (long)CURLUSESSL_ALL);
+           curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, false);
         }
         else
            adresseSMTP = "smtp://";
-
         adresseSMTP += configServeur->getAdressSMTP();
         if(configServeur->getRequiertAuthentification() && !configServeur->getSmtpSecuriser())
         {
             adresseSMTP += ":587";
-            //curl_easy_setopt(curl, CURLOPT_CAINFO, "./debug/ca-bundle.crt");
+            curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, false);
+            curl_easy_setopt(curl, CURLOPT_USE_SSL, (long)CURLUSESSL_ALL);
         }
-#ifdef SKIP_PEER_VERIFICATION
-    curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, FALSE);
-#endif
-#ifdef SKIP_HOSTNAME_VERFICATION
-    curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
-#endif
+
         curl_easy_setopt(curl, CURLOPT_URL, adresseSMTP.toStdString().c_str());
 
         curl_easy_setopt(curl, CURLOPT_MAIL_FROM,
@@ -241,8 +235,8 @@ void TraitementThread::setMode(int value)
 
 void TraitementThread::setParams(QString a_sujet, QString a_body, QString a_to, QString a_from)
 {
-    objet   = "Subject: " + a_sujet + "\r\n" ;
-    body    = a_body + "\r\n";
+    objet   = "Subject: " + a_sujet + " \r\n" ;
+    body    = a_body + ". \r\n";
     to      =  a_to + "> \r\n";
     from    =  "FROM: <" + a_from + "> \r\n" ;
 }
@@ -270,7 +264,7 @@ void TraitementThread::creerListeDeMail()
             if(configServeur->getPopSecuriser())
             {
                 adressePop = "pop3s://";
-                curl_easy_setopt(curl, CURLOPT_CAINFO, "./debug/ca-bundle.crt");
+                curl_easy_setopt(curl, CURLOPT_CAINFO, "./debug/curl-ca-bundle.crt");
             }
             else
                 adressePop = "pop3://";

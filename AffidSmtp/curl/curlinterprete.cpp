@@ -40,6 +40,7 @@ void CurlInterprete::envoyerNouveauMail()
 {
     envoyer->exec();
     threadCurl->setMode(TraitementThread::Envoyer);
+    configServeur->lireConfigurationServeur();
     threadCurl->setParams(sujet,body,to,configServeur->getAdresseMessagerie());
     progress->show();
     threadCurl->start();
