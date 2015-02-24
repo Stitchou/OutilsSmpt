@@ -3,7 +3,6 @@
 #include <QSettings>
 
 Configuration *Configuration::configurationInstance = NULL;
-QString Configuration::messagerie = "";
 
 Configuration *Configuration::getInstance()
 {
@@ -35,6 +34,16 @@ Configuration::Configuration()
     requiertAuthentification     = true;
     parametresConnexionIdentique = true;
 }
+bool Configuration::getLogActions() const
+{
+    return logActions;
+}
+
+void Configuration::setLogActions(bool value)
+{
+    logActions = value;
+}
+
 bool Configuration::getSmtpSecuriser() const
 {
     return smtpSecuriser;
@@ -109,7 +118,7 @@ void Configuration::lireConfigurationServeur()
     configurationInstance->setParametresConnexionIdentique(fichierIni->value(tr("RESEAU/PARAMETRE_CONNEXION"),"true").toBool());
     configurationInstance->setIdentifiantConnexion(fichierIni->value(tr("RESEAU/IDENTIFIANT_CONNEXION"),"").toString());
     configurationInstance->setMostDePasseConnexion(fichierIni->value(tr("RESEAU/MOT_DE_PASSE_CONNEXION"),"").toString());
-    messagerie = adresseMessagerie;
+    configurationInstance->setLogActions(fichierIni->value(tr("RESEAU/LOG"),"false").toBool());
 }
 
 QString Configuration::getPortSMTP() const

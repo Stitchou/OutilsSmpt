@@ -39,13 +39,13 @@ private:
     Configuration * configServeur;
     QFile *fic;
     QString contenue;
+    QString mailFrom, mailTo, mailBody, mailObject;
 
     void creerListeDeMail();
     void decouperListe();
     void listerMail();
 
-    void reconstruireDataMail();
-    void envoyerMail();
+    void envoyerMail2();
 };
 
 #endif // TRAITEMENTTHREAD_H

@@ -50,8 +50,6 @@ void ConfigurationSesamVitale::showEvent(QShowEvent *event)
     ui->smtpServeur->setText(configServeur->getAdressSMTP());
     ui->popPort->setText(configServeur->getPortPOP());
     ui->smtpPort->setText(configServeur->getPortSMTP());   
-    ui->identifiantconnexion->setText(configServeur->getIdentifiantConnexion());
-    ui->passwordConnexion->setText(configServeur->getMostDePasseConnexion());
 
     ui->popAUTH->setChecked(configServeur->getPopSecuriser());
     ui->smtpAuth->setChecked(configServeur->getRequiertAuthentification());
@@ -61,6 +59,10 @@ void ConfigurationSesamVitale::showEvent(QShowEvent *event)
     smtpSecuriserCliquer();
     popSecuriserCliquer();
     parametreIdentiqueCliquer();
+
+    ui->identifiantconnexion->setText(configServeur->getIdentifiantConnexion());
+    ui->passwordConnexion->setText(configServeur->getMostDePasseConnexion());
+
 
 }
 
@@ -82,7 +84,7 @@ void ConfigurationSesamVitale::sauvegarderConfigurationServeur()
 
     fichierIni->setValue(tr("RESEAU/POP_SECURE"),ui->popAUTH->isChecked());
     fichierIni->setValue(tr("RESEAU/SMTP_SECURE"),ui->smtpSSL->isChecked());
-
+    fichierIni->setValue(tr("RESEAU/LOG"),ui->traces->isChecked());
 
 }
 

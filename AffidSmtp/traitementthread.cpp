@@ -6,7 +6,8 @@
 #include <QtDebug>
 #include <QTextStream>
 #include <QDate>
-#include <QApplication>
+#include <QDir>
+#include <QProcess>
 
 // variables globales
 int taille;
@@ -16,11 +17,6 @@ static QStringList toto;
 CURL *curl;
 CURLcode res = CURLE_OK;
 
-static QString objet = "";
-static QString body = "";
-static QString to = "";
-static QString from = "";
-
 // callback de reception
 size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
     size_t written;
@@ -28,46 +24,6 @@ size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
     written = fwrite(ptr, size, nmemb, stream);
     valeur = nmemb ;
     return written;
-}
-
-// méthodes pour l'envoi de mail
-static char *payload_text[]  = {
-  "Date: Mon, 29 Nov 2010 21:54:29 +1100\r\n",
-  (char *) to.toStdString().c_str(),
-  (char *) from.toStdString().c_str(),
-  "Message-ID: <dcd7cb36-11db-487a-9f3a-e652a9458efd@rfcpedant.example.org>\r\n",
-  (char *) objet.toStdString().c_str(),
-  "\r\n",
-  (char *) body.toStdString().c_str(),
-  "\r\n",
-  "Check RFC5322.\r\n",
-  NULL
-};
-
-struct upload_status {
-  int lines_read;
-};
-
-static size_t payload_source(void *ptr, size_t size, size_t nmemb, void *userp)
-{
-  struct upload_status *upload_ctx = (struct upload_status *)userp;
-  const char *data;
-
-  if((size == 0) || (nmemb == 0) || ((size*nmemb) < 1)) {
-    return 0;
-  }
-
-  data = payload_text[upload_ctx->lines_read];
-
-  if(data) {
-    size_t len = strlen(data);
-    memcpy(ptr, data, len);
-    upload_ctx->lines_read++;
-
-    return len;
-  }
-
-  return 0;
 }
 
 TraitementThread::TraitementThread(QObject *parent) : QThread(parent)
@@ -91,8 +47,7 @@ void TraitementThread::run()
     }
     else if(mode == TraitementThread::Envoyer)
     {
-        reconstruireDataMail();
-        envoyerMail();
+        envoyerMail2();
     }
 }
 
@@ -144,82 +99,72 @@ void TraitementThread::listerMail()
     creerListeDeMail();
 }
 
-void TraitementThread::reconstruireDataMail()
+
+void TraitementThread::envoyerMail2()
 {
-      payload_text [0] = "Date: Mon, 29 Nov 2010 21:54:29 +1100\r\n";
-      payload_text [1] = (char *) to.toStdString().c_str() ;
-      payload_text [2] = (char *) from.toStdString().c_str() ;
-      payload_text [3] = "Message-ID: < afid vitale >\r\n";
-      payload_text [4] = (char *) objet.toStdString().c_str() ;
-      payload_text [5] = "\r\n";
-      payload_text [6] = (char *) body.toStdString().c_str() ;
-      payload_text [7] = "\r\n.\r\n";
-      payload_text [8] = "\r\n Check RFC5322.\r\n";
-      payload_text [9] = NULL ;
+    /*curl --url "smtp://smtp.live.com:587"
+     * --ssl-reqd
+     * --mail-from "e.imbart@hotmail.fr"
+     * --mail-rcpt "lovermaki@hotmail.fr"
+     * --upload-file mail.txt
+     * --user "e.imbart@hotmail.fr:Clarisse"
+     * --insecure
+    ping 127.0.0.1 -n 2 > toto.txt
+    exit*/
+    contenue.clear();
 
-}
+    contenue =  "From: <"+mailFrom+"> \r\n";
+    contenue += "To: <" + mailTo + "> \r\n";
+    contenue += "Subject: " + mailObject + "\r\n";
+    contenue += "\r\n";
+    contenue += mailBody;
 
-void TraitementThread::envoyerMail()
-{
-    struct curl_slist *recipients = NULL;
-    struct upload_status upload_ctx;
+    fic->setFileName("mail.txt");
+    fic->open(QIODevice::WriteOnly | QIODevice::Text);
+    QTextStream flux(fic);
+    flux.setCodec("UTF-8");
+    flux << contenue;
+    fic->close();
 
-    upload_ctx.lines_read = 0;
+    QProcess * cmd = new QProcess;
+    QStringList arg;
+    emit sendTraitementEnCours(QString("Envoie du mail en cours"));
 
-    curl = curl_easy_init();
 
-    if(curl)
+    QString adresseSMTP ;
+    if(configServeur->getSmtpSecuriser())
     {
-        emit sendTraitementEnCours(QString("Envoie du mail en cours"));
-
-        curl_easy_setopt(curl, CURLOPT_USERNAME,
-                        configServeur->getIdentifiantConnexion().toStdString().c_str());
-        curl_easy_setopt(curl, CURLOPT_PASSWORD,
-                        configServeur->getMostDePasseConnexion().toStdString().c_str());
-
-        QString adresseSMTP ;
-        if(configServeur->getSmtpSecuriser())
-        {
-           adresseSMTP = "smtps://";
-           curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, false);
-        }
-        else
-           adresseSMTP = "smtp://";
-        adresseSMTP += configServeur->getAdressSMTP();
-        if(configServeur->getRequiertAuthentification() && !configServeur->getSmtpSecuriser())
-        {
-            adresseSMTP += ":587";
-            curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, false);
-            curl_easy_setopt(curl, CURLOPT_USE_SSL, (long)CURLUSESSL_ALL);
-        }
-
-        curl_easy_setopt(curl, CURLOPT_URL, adresseSMTP.toStdString().c_str());
-
-        curl_easy_setopt(curl, CURLOPT_MAIL_FROM,
-                        configServeur->getAdresseMessagerie().toStdString().c_str());
-
-        recipients = curl_slist_append(recipients, to.toStdString().c_str());
-        curl_easy_setopt(curl, CURLOPT_MAIL_RCPT, recipients);
-
-        curl_easy_setopt(curl, CURLOPT_READFUNCTION, payload_source);
-        curl_easy_setopt(curl, CURLOPT_READDATA, &upload_ctx);
-        curl_easy_setopt(curl, CURLOPT_UPLOAD, 1L);
-
-        curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
-
-        /* Send the message */
-        res = curl_easy_perform(curl);
-
-        /* Check for errors */
-        if(res != CURLE_OK)
-         fprintf(stderr, "curl_easy_perform() failed: %s\n",
-                 curl_easy_strerror(res));
-
-        /* Free the list of recipients */
-        curl_slist_free_all(recipients);
-
-        curl_easy_cleanup(curl);
+       adresseSMTP = "smtps://";
     }
+    else
+       adresseSMTP = "smtp://";
+    adresseSMTP += configServeur->getAdressSMTP();
+    if(configServeur->getRequiertAuthentification() && !configServeur->getSmtpSecuriser())
+    {
+        adresseSMTP += ":587";
+    }
+
+    // construction des arguments
+    arg << "--url" << adresseSMTP;
+
+    if(     (configServeur->getRequiertAuthentification() && !configServeur->getSmtpSecuriser())
+       ||   (configServeur->getSmtpSecuriser())
+      )
+        arg << "--ssl-reqd";
+
+    arg << "--mail-from" << mailFrom
+        << "--mail-rcpt" << mailTo
+        << "--upload-file" << "mail.txt"
+        << "--user" << configServeur->getIdentifiantConnexion()+":"+configServeur->getMostDePasseConnexion();
+
+    if(configServeur->getLogActions())
+        arg << "> toto.txt";
+    qDebug () << arg;
+
+    cmd->execute("curl.exe",arg);
+
+
+    //fic->remove();
     this->sleep(1);
     emit fini();
 }
@@ -235,10 +180,10 @@ void TraitementThread::setMode(int value)
 
 void TraitementThread::setParams(QString a_sujet, QString a_body, QString a_to, QString a_from)
 {
-    objet   = "Subject: " + a_sujet + " \r\n" ;
-    body    = a_body + ". \r\n";
-    to      =  a_to + "> \r\n";
-    from    =  "FROM: <" + a_from + "> \r\n" ;
+    mailBody = a_body;
+    mailFrom = a_from;
+    mailTo = a_to;
+    mailObject = a_sujet;
 }
 
 void TraitementThread::creerListeDeMail()

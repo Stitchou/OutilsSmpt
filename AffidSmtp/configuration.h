@@ -58,7 +58,9 @@ public:
     bool getSmtpSecuriser() const;
     void setSmtpSecuriser(bool value);
 
-    static QString messagerie;
+    bool getLogActions() const;
+    void setLogActions(bool value);
+
 private:
     static Configuration * configurationInstance;
     Configuration();
@@ -79,6 +81,7 @@ private:
     bool    parametresConnexionIdentique;
     bool    popSecuriser;
     bool    smtpSecuriser;
+    bool    logActions;
 
     QSettings * fichierIni;
 signals:

@@ -38,12 +38,15 @@ void CurlInterprete::listerMail()
 
 void CurlInterprete::envoyerNouveauMail()
 {
-    envoyer->exec();
-    threadCurl->setMode(TraitementThread::Envoyer);
-    configServeur->lireConfigurationServeur();
-    threadCurl->setParams(sujet,body,to,configServeur->getAdresseMessagerie());
-    progress->show();
-    threadCurl->start();
+    int retour = envoyer->exec();
+    if( retour == QDialog::Accepted)
+    {
+        threadCurl->setMode(TraitementThread::Envoyer);
+        configServeur->lireConfigurationServeur();
+        threadCurl->setParams(sujet,body,to,configServeur->getAdresseMessagerie());
+        progress->show();
+        threadCurl->start();
+    }
 }
 
 void CurlInterprete::terminerProgression()

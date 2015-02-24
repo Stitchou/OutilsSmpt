@@ -486,7 +486,7 @@
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
-   <widget class="QCheckBox" name="checkBox">
+   <widget class="QCheckBox" name="traces">
     <property name="geometry">
      <rect>
       <x>350</x>
@@ -535,7 +535,7 @@
   <tabstop>annuler</tabstop>
   <tabstop>aide</tabstop>
   <tabstop>radioButton</tabstop>
-  <tabstop>checkBox</tabstop>
+  <tabstop>traces</tabstop>
  </tabstops>
  <resources/>
  <connections/>

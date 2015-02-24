@@ -63,7 +63,7 @@ public:
     QCheckBox *popAUTH;
     QCheckBox *smtpSSL;
     QGroupBox *groupBox_5;
-    QCheckBox *checkBox;
+    QCheckBox *traces;
     QPushButton *tester;
 
     void setupUi(QDialog *ConfigurationSesamVitale)
@@ -195,10 +195,10 @@ public:
         groupBox_5->setObjectName(QStringLiteral("groupBox_5"));
         groupBox_5->setGeometry(QRect(20, 630, 591, 61));
         groupBox_5->setAlignment(Qt::AlignCenter);
-        checkBox = new QCheckBox(groupBox_5);
-        checkBox->setObjectName(QStringLiteral("checkBox"));
-        checkBox->setGeometry(QRect(350, 20, 221, 21));
-        checkBox->setLayoutDirection(Qt::RightToLeft);
+        traces = new QCheckBox(groupBox_5);
+        traces->setObjectName(QStringLiteral("traces"));
+        traces->setGeometry(QRect(350, 20, 221, 21));
+        traces->setLayoutDirection(Qt::RightToLeft);
         tester = new QPushButton(ConfigurationSesamVitale);
         tester->setObjectName(QStringLiteral("tester"));
         tester->setGeometry(QRect(630, 290, 111, 31));
@@ -218,7 +218,7 @@ public:
         QWidget::setTabOrder(valider, annuler);
         QWidget::setTabOrder(annuler, aide);
         QWidget::setTabOrder(aide, radioButton);
-        QWidget::setTabOrder(radioButton, checkBox);
+        QWidget::setTabOrder(radioButton, traces);
 
         retranslateUi(ConfigurationSesamVitale);
 
@@ -256,7 +256,7 @@ public:
         popAUTH->setText(QApplication::translate("ConfigurationSesamVitale", "Le serveur POP requiert une connexion s\303\251curis\303\251e", 0));
         smtpSSL->setText(QApplication::translate("ConfigurationSesamVitale", "Le serveur SMTP requiert une connexion SSL", 0));
         groupBox_5->setTitle(QApplication::translate("ConfigurationSesamVitale", "Programmation de la t\303\251l\303\251transmission automatique", 0));
-        checkBox->setText(QApplication::translate("ConfigurationSesamVitale", "Activer la trace de connexion", 0));
+        traces->setText(QApplication::translate("ConfigurationSesamVitale", "Activer la trace de connexion", 0));
         tester->setText(QApplication::translate("ConfigurationSesamVitale", "Tester", 0));
     } // retranslateUi
 
