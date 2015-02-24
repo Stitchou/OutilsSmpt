@@ -62,6 +62,7 @@ void ConfigurationSesamVitale::showEvent(QShowEvent *event)
 
     ui->identifiantconnexion->setText(configServeur->getIdentifiantConnexion());
     ui->passwordConnexion->setText(configServeur->getMostDePasseConnexion());
+    ui->traces->setChecked(configServeur->getLogActions());
 
 
 }

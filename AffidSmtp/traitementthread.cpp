@@ -102,15 +102,6 @@ void TraitementThread::listerMail()
 
 void TraitementThread::envoyerMail2()
 {
-    /*curl --url "smtp://smtp.live.com:587"
-     * --ssl-reqd
-     * --mail-from "e.imbart@hotmail.fr"
-     * --mail-rcpt "lovermaki@hotmail.fr"
-     * --upload-file mail.txt
-     * --user "e.imbart@hotmail.fr:Clarisse"
-     * --insecure
-    ping 127.0.0.1 -n 2 > toto.txt
-    exit*/
     contenue.clear();
 
     contenue =  "From: <"+mailFrom+"> \r\n";
@@ -164,7 +155,7 @@ void TraitementThread::envoyerMail2()
     cmd->execute("curl.exe",arg);
 
 
-    //fic->remove();
+    fic->remove();
     this->sleep(1);
     emit fini();
 }
