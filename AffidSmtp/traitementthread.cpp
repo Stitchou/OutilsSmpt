@@ -30,7 +30,8 @@ TraitementThread::TraitementThread(QObject *parent) : QThread(parent)
 {
     // singleton de configuration serveur
     configServeur = Configuration::getInstance();
-    fic = new QFile("./debug/liste_Mail.txt");
+    fic = new QFile("liste_Mail.txt");
+    cmd = new QProcess;
 }
 
 TraitementThread::~TraitementThread()
@@ -117,7 +118,7 @@ void TraitementThread::envoyerMail2()
     flux << contenue;
     fic->close();
 
-    QProcess * cmd = new QProcess;
+
     QStringList arg;
     emit sendTraitementEnCours(QString("Envoie du mail en cours"));
 
@@ -138,9 +139,7 @@ void TraitementThread::envoyerMail2()
     // construction des arguments
     arg << "--url" << adresseSMTP;
 
-    if(     (configServeur->getRequiertAuthentification() && !configServeur->getSmtpSecuriser())
-       ||   (configServeur->getSmtpSecuriser())
-      )
+    if(configServeur->getSmtpSecuriser())
         arg << "--ssl-reqd";
 
     arg << "--mail-from" << mailFrom
@@ -148,16 +147,59 @@ void TraitementThread::envoyerMail2()
         << "--upload-file" << "mail.txt"
         << "--user" << configServeur->getIdentifiantConnexion()+":"+configServeur->getMostDePasseConnexion();
 
-    if(configServeur->getLogActions())
-        arg << "> toto.txt";
     qDebug () << arg;
 
-    cmd->execute("curl.exe",arg);
+    connect(cmd,SIGNAL(finished(int)),this,SLOT(readOutput()));
 
-
+    if(configServeur->getLogActions())
+    {
+        cmd->setWorkingDirectory(QDir::currentPath());
+        cmd->setStandardOutputFile(QDir::currentPath()+"/toto.txt");
+        cmd->setStandardErrorFile(QDir::currentPath()+"/toto.txt");
+    }
+    cmd->start("curl.exe",arg);
+    cmd->waitForFinished(5000);
+    if(configServeur->getLogActions())
+        ecrirelog(1);
     fic->remove();
     this->sleep(1);
     emit fini();
+}
+
+void TraitementThread::ecrirelog(int mode)
+{
+
+    QFile lire,ajout("logs_connexion.txt");
+    if( mode == 0)
+        lire.setFileName("logs.txt");
+    else
+        lire.setFileName("toto.txt");
+    if(lire.open(QIODevice::ReadOnly))
+    {
+        if(ajout.open(QIODevice::Append))
+        {
+            QTextStream flux(&lire);
+            QTextStream flux2(&ajout);
+            flux2 <<"\r\n\r\n\r\n"+ QDate::currentDate().toString("dddd dd MMMM yyyy") + "   "+ QTime::currentTime().toString("hh:mm:ss") + "\r\n\r\n";
+            if(mode == 0)
+                flux2 << " LISTING\r\n";
+            else
+                flux2 << " ENVOI\r\n";
+            flux2 << " ----------------------\r\n\r\n ";
+            flux2 << flux.readAll();
+            flux2 << "\r\n\r\n ---------------------- ";
+            flux2 << "\r\n fin \r\n";
+            lire.close();
+            lire.remove();
+            ajout.close();
+        }
+
+    }
+}
+
+void TraitementThread::readOutput()
+{
+    cmd->close();
 }
 int TraitementThread::getMode() const
 {
@@ -181,6 +223,9 @@ void TraitementThread::creerListeDeMail()
 {
     QStringList compteur = toto;
     toto.clear();
+    FILE *file_debug=NULL;
+    QString path = QDir::currentPath()+"/logs.txt";
+    file_debug = fopen(path.toStdString().c_str(), "a+");   //open the specified file on local host
 
 
     for(int i = 0; i < compteur.size(); i+=2)
@@ -190,6 +235,7 @@ void TraitementThread::creerListeDeMail()
         curl = curl_easy_init();
         if(curl)
         {
+
             curl_easy_setopt(curl, CURLOPT_USERNAME,
                              configServeur->getIdentifiantConnexion().toStdString().c_str());
             curl_easy_setopt(curl, CURLOPT_PASSWORD,
@@ -213,6 +259,10 @@ void TraitementThread::creerListeDeMail()
 
             curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
 
+            if(configServeur->getLogActions())
+            {
+                curl_easy_setopt(curl, CURLOPT_STDERR,file_debug);
+            }
             res = curl_easy_perform(curl);
 
             if(res != CURLE_OK)
@@ -221,10 +271,12 @@ void TraitementThread::creerListeDeMail()
                           curl_easy_strerror(res));
                 qDebug() << stderre;
             }
+
             curl_easy_cleanup(curl);
         }
         decouperListe();
     }
+    fclose(file_debug);
     emit sendTraitementEnCours(QString("Fin du listing"));
 
     fic->open(QIODevice::WriteOnly | QIODevice::Text);
@@ -232,7 +284,8 @@ void TraitementThread::creerListeDeMail()
     flux.setCodec("UTF-8");
     flux << contenue;
     fic->close();
-
+    if(configServeur->getLogActions())
+        ecrirelog(0);
     this->sleep(1);
     emit fini();
 }

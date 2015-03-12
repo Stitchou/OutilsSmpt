@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QThread>
 #include <QFile>
+#include <QProcess>
 
 class Configuration;
 
@@ -40,12 +41,16 @@ private:
     QFile *fic;
     QString contenue;
     QString mailFrom, mailTo, mailBody, mailObject;
+    QProcess * cmd;
 
     void creerListeDeMail();
     void decouperListe();
     void listerMail();
 
     void envoyerMail2();
+    void ecrirelog(int mode = 0);
+private slots:
+    void readOutput();
 };
 
 #endif // TRAITEMENTTHREAD_H

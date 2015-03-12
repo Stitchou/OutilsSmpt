@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_TraitementThread_t {
-    QByteArrayData data[8];
-    char stringdata[73];
+    QByteArrayData data[9];
+    char stringdata[84];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,13 +34,15 @@ QT_MOC_LITERAL(1, 17, 21), // "sendTraitementEnCours"
 QT_MOC_LITERAL(2, 39, 0), // ""
 QT_MOC_LITERAL(3, 40, 7), // "message"
 QT_MOC_LITERAL(4, 48, 4), // "fini"
-QT_MOC_LITERAL(5, 53, 4), // "Mode"
-QT_MOC_LITERAL(6, 58, 6), // "Lister"
-QT_MOC_LITERAL(7, 65, 7) // "Envoyer"
+QT_MOC_LITERAL(5, 53, 10), // "readOutput"
+QT_MOC_LITERAL(6, 64, 4), // "Mode"
+QT_MOC_LITERAL(7, 69, 6), // "Lister"
+QT_MOC_LITERAL(8, 76, 7) // "Envoyer"
 
     },
     "TraitementThread\0sendTraitementEnCours\0"
-    "\0message\0fini\0Mode\0Lister\0Envoyer"
+    "\0message\0fini\0readOutput\0Mode\0Lister\0"
+    "Envoyer"
 };
 #undef QT_MOC_LITERAL
 
@@ -50,27 +52,33 @@ static const uint qt_meta_data_TraitementThread[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
-       1,   28, // enums/sets
+       1,   34, // enums/sets
        0,    0, // constructors
        0,       // flags
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   24,    2, 0x06 /* Public */,
-       4,    0,   27,    2, 0x06 /* Public */,
+       1,    1,   29,    2, 0x06 /* Public */,
+       4,    0,   32,    2, 0x06 /* Public */,
+
+ // slots: name, argc, parameters, tag, flags
+       5,    0,   33,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QString,    3,
     QMetaType::Void,
 
+ // slots: parameters
+    QMetaType::Void,
+
  // enums: name, flags, count, data
-       5, 0x0,    2,   32,
+       6, 0x0,    2,   38,
 
  // enum data: key, value
-       6, uint(TraitementThread::Lister),
-       7, uint(TraitementThread::Envoyer),
+       7, uint(TraitementThread::Lister),
+       8, uint(TraitementThread::Envoyer),
 
        0        // eod
 };
@@ -82,6 +90,7 @@ void TraitementThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
         switch (_id) {
         case 0: _t->sendTraitementEnCours((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 1: _t->fini(); break;
+        case 2: _t->readOutput(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -127,13 +136,13 @@ int TraitementThread::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }

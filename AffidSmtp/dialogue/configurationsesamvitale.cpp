@@ -56,9 +56,9 @@ void ConfigurationSesamVitale::showEvent(QShowEvent *event)
     ui->smtpSSL->setChecked(configServeur->getSmtpSecuriser());
     ui->parametresConnexion->setChecked(configServeur->getParametresConnexionIdentique());
 
-    smtpSecuriserCliquer();
-    popSecuriserCliquer();
-    parametreIdentiqueCliquer();
+    //smtpSecuriserCliquer();
+    //popSecuriserCliquer();
+    //parametreIdentiqueCliquer();
 
     ui->identifiantconnexion->setText(configServeur->getIdentifiantConnexion());
     ui->passwordConnexion->setText(configServeur->getMostDePasseConnexion());

@@ -39,8 +39,9 @@ void CurlInterprete::listerMail()
 void CurlInterprete::envoyerNouveauMail()
 {
     int retour = envoyer->exec();
-    if( retour == QDialog::Accepted)
+    if( retour == 0)
     {
+        mode = TraitementThread::Envoyer;
         threadCurl->setMode(TraitementThread::Envoyer);
         configServeur->lireConfigurationServeur();
         threadCurl->setParams(sujet,body,to,configServeur->getAdresseMessagerie());
