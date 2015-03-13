@@ -1,12 +1,159 @@
-jeudi 12 - mars - 2015   12:13:06
+
+
+
+vendredi 13 mars 2015   13:05:19
 
  LISTING
  ----------------------
 
- *   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:06:22
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:06:41
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:07:03
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:08:13
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:09:37
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:10:54
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:12:13
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:15:53
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:19:02
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:20:03
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:20:48
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:23:09
+
+ LISTING
+ ----------------------
+
+ *   Trying 80.12.242.60...
+* Connected to pop.orange.fr (80.12.242.60) port 995 (#0)
 * successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
+*   CAfile: ./curl-ca-bundle.crt
   CApath: none
 * SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
 * Server certificate:
@@ -32,10 +179,10 @@ jeudi 12 - mars - 2015   12:13:06
 > RETR 1
 < +OK Message follows
 * Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
+*   Trying 80.12.242.60...
+* Connected to pop.orange.fr (80.12.242.60) port 995 (#0)
 * successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
+*   CAfile: ./curl-ca-bundle.crt
   CApath: none
 * SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
 * Server certificate:
@@ -61,10 +208,10 @@ jeudi 12 - mars - 2015   12:13:06
 > RETR 2
 < +OK Message follows
 * Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
+*   Trying 80.12.242.60...
+* Connected to pop.orange.fr (80.12.242.60) port 995 (#0)
 * successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
+*   CAfile: ./curl-ca-bundle.crt
   CApath: none
 * SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
 * Server certificate:
@@ -90,10 +237,10 @@ jeudi 12 - mars - 2015   12:13:06
 > RETR 3
 < +OK Message follows
 * Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
+*   Trying 80.12.242.60...
+* Connected to pop.orange.fr (80.12.242.60) port 995 (#0)
 * successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
+*   CAfile: ./curl-ca-bundle.crt
   CApath: none
 * SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
 * Server certificate:
@@ -119,10 +266,10 @@ jeudi 12 - mars - 2015   12:13:06
 > RETR 4
 < +OK Message follows
 * Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
+*   Trying 80.12.242.60...
+* Connected to pop.orange.fr (80.12.242.60) port 995 (#0)
 * successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
+*   CAfile: ./curl-ca-bundle.crt
   CApath: none
 * SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
 * Server certificate:
@@ -148,482 +295,6 @@ jeudi 12 - mars - 2015   12:13:06
 > RETR 5
 < +OK Message follows
 * Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 6
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 7
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 8
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 9
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 10
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 11
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 12
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 13
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 14
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 15
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 16
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 17
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 18
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 19
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 20
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-*   Trying 193.252.22.90...
-* Connected to pop.orange.fr (193.252.22.90) port 995 (#0)
-* successfully set certificate verify locations:
-*   CAfile: ./debug/curl-ca-bundle.crt
-  CApath: none
-* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
-* Server certificate:
-* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
-* 	 start date: 2014-10-03 00:00:00 GMT
-* 	 expire date: 2015-12-12 23:59:59 GMT
-* 	 subjectAltName: pop.orange.fr matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
-* 	 SSL certificate verify ok.
-< +OK POP3 ready
-> CAPA
-< +OK Capability list follows
-< TOP
-< USER
-< SASL LOGIN PLAIN
-< .
-> AUTH LOGIN
-< + VXNlcm5hbWU6
-> YS5jbmRh
-< + UGFzc3dvcmQ6
-> YWZmaWQyMDA4
-< +OK Mailbox locked and ready
-> RETR 21
-< +OK Message follows
-* Connection #0 to host pop.orange.fr left intact
-
-
- ---------------------- 
- fin 
-jeudi 12 - mars - 2015   12:13:41
-
- ENVOI
- ----------------------
-
-   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   195    0     0  100   195      0    390 --:--:-- --:--:-- --:--:--   390
 
 
  ---------------------- 
@@ -631,14 +302,75 @@ jeudi 12 - mars - 2015   12:13:41
 
 
 
-jeudi 12 - mars - 2015   12:15:57
+vendredi 13 mars 2015   13:23:38
 
  ENVOI
  ----------------------
 
-   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   185    0     0  100   185      0    423 --:--:-- --:--:-- --:--:--   423100   185    0     0  100   185      0    423 --:--:-- --:--:-- --:--:--   423
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d26 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d26 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr>
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<>
+< 550 5.5.0 <> missing or malformed local part
+* RCPT failed: 550
+> QUIT
+< 221 2.0.0 mwinf5d26 ME closing connection
+* Closing connection 0
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   13:23:57
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d26 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d26 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr>
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmal.fr>
+< 250 2.1.5 <e.imbart@hotmal.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 30QL1q00b57bQA7030QMRS mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
 
 
  ---------------------- 

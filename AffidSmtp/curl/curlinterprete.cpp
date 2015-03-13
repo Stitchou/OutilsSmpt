@@ -6,7 +6,7 @@
 
 #include <QMessageBox>
 #include <QDesktopServices>
-#include <QApplication>
+#include <QDir>
 #include <QUrl>
 
 CurlInterprete::CurlInterprete(QObject *parent) : QObject(parent)
@@ -56,7 +56,7 @@ void CurlInterprete::terminerProgression()
 
     if( mode == TraitementThread::Lister)
     {
-        QString path = "file:///"+QApplication::applicationDirPath()+"/liste_Mail.txt";
+        QString path = "file:///"+QDir::currentPath()+"/liste_Mail.txt";
         QDesktopServices::openUrl(QUrl(path));
     }
 }

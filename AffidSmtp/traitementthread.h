@@ -46,7 +46,8 @@ private:
     void creerListeDeMail();
     void decouperListe();
     void listerMail();
-
+    void reformater();
+    void envoyerMail();
     void envoyerMail2();
     void ecrirelog(int mode = 0);
 private slots:

@@ -14,10 +14,10 @@ CXX           = g++
 DEFINES       = -DUNICODE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
 CFLAGS        = -pipe -fno-keep-inline-dllexport -O2 -Wall -Wextra $(DEFINES)
 CXXFLAGS      = -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads $(DEFINES)
-INCPATH       = -I..\AffidSmtp -I"..\AffidSmtp\curllib" -I"C:\Qt\Qt5.4.0\5.4\mingw491_32\include" -I"C:\Qt\Qt5.4.0\5.4\mingw491_32\include\QtWidgets" -I"C:\Qt\Qt5.4.0\5.4\mingw491_32\include\QtGui" -I"C:\Qt\Qt5.4.0\5.4\mingw491_32\include\QtCore" -I"release" -I"." -I"." -I"C:\Qt\Qt5.4.0\5.4\mingw491_32\mkspecs\win32-g++"
+INCPATH       = -I..\AffidSmtp -I"\curllib" -I"C:\Qt\Qt5.4.0\5.4\mingw491_32\include" -I"C:\Qt\Qt5.4.0\5.4\mingw491_32\include\QtWidgets" -I"C:\Qt\Qt5.4.0\5.4\mingw491_32\include\QtGui" -I"C:\Qt\Qt5.4.0\5.4\mingw491_32\include\QtCore" -I"release" -I"." -I"." -I"C:\Qt\Qt5.4.0\5.4\mingw491_32\mkspecs\win32-g++"
 LINKER      =        g++
 LFLAGS        =        -Wl,-s -Wl,-subsystem,windows -mthreads
-LIBS        =        -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -LC:/Qt/Qt5.4.0/5.4/mingw491_32/lib -lqtmain -LC:\mingw491\mingw32\lib -LC:\Utils\icu32_53_1_mingw482\lib -LC:\utils\postgresql\pgsql\lib -LC:\utils\mysql\mysql\lib -LC:\opensll\lib -lshell32 -LC:\Qt\Qt5.4.0\5.4\mingw491_32/lib F:/github/OutilsSmpt/AffidSmtp/curllib/lib/libcurldll.a F:/github/OutilsSmpt/AffidSmtp/curllib/lib/libcurl.a -lQt5Widgets -lQt5Gui -lQt5Core 
+LIBS        =        -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -LC:/Qt/Qt5.4.0/5.4/mingw491_32/lib -lqtmain -LC:\mingw491\mingw32\lib -LC:\Utils\icu32_53_1_mingw482\lib -LC:\utils\postgresql\pgsql\lib -LC:\utils\mysql\mysql\lib -LC:\opensll\lib -lshell32 -LC:\Qt\Qt5.4.0\5.4\mingw491_32/lib -LF:/github/OutilsSmpt/AffidSmtp/curllib/lib/ -lcurldll -lcurl -lQt5Widgets -lQt5Gui -lQt5Core 
 QMAKE         = C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\qmake.exe
 IDC           = idc
 IDL           = midl
@@ -250,7 +250,7 @@ release/moc_mainwindow.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QMai
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qicon.h \
 		../AffidSmtp/mainwindow.h
-	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -IF:/github/OutilsSmpt/AffidSmtp/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\mainwindow.h -o release\moc_mainwindow.cpp
+	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -I/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\mainwindow.h -o release\moc_mainwindow.cpp
 
 release/moc_configurationsesamvitale.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QDialog \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qdialog.h \
@@ -356,7 +356,7 @@ release/moc_configurationsesamvitale.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		../AffidSmtp/dialogue/configurationsesamvitale.h
-	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -IF:/github/OutilsSmpt/AffidSmtp/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\dialogue\configurationsesamvitale.h -o release\moc_configurationsesamvitale.cpp
+	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -I/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\dialogue\configurationsesamvitale.h -o release\moc_configurationsesamvitale.cpp
 
 release/moc_configuration.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QObject \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qobject.h \
@@ -409,7 +409,7 @@ release/moc_configuration.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QObj
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qisenum.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qobject_impl.h \
 		../AffidSmtp/configuration.h
-	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -IF:/github/OutilsSmpt/AffidSmtp/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\configuration.h -o release\moc_configuration.cpp
+	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -I/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\configuration.h -o release\moc_configuration.cpp
 
 release/moc_curlinterprete.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QObject \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qobject.h \
@@ -462,7 +462,7 @@ release/moc_curlinterprete.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QOb
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qisenum.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qobject_impl.h \
 		../AffidSmtp/curl/curlinterprete.h
-	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -IF:/github/OutilsSmpt/AffidSmtp/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\curl\curlinterprete.h -o release\moc_curlinterprete.cpp
+	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -I/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\curl\curlinterprete.h -o release\moc_curlinterprete.cpp
 
 release/moc_progression.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QDialog \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qdialog.h \
@@ -568,7 +568,7 @@ release/moc_progression.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QDi
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		../AffidSmtp/dialogue/progression.h
-	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -IF:/github/OutilsSmpt/AffidSmtp/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\dialogue\progression.h -o release\moc_progression.cpp
+	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -I/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\dialogue\progression.h -o release\moc_progression.cpp
 
 release/moc_traitementthread.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QObject \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qobject.h \
@@ -626,8 +626,17 @@ release/moc_traitementthread.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/Q
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qfile.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qfiledevice.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qiodevice.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QProcess \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qprocess.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qstringlist.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qdatastream.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qpair.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qregexp.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qstringmatcher.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qshareddata.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qhash.h \
 		../AffidSmtp/traitementthread.h
-	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -IF:/github/OutilsSmpt/AffidSmtp/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\traitementthread.h -o release\moc_traitementthread.cpp
+	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -I/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\traitementthread.h -o release\moc_traitementthread.cpp
 
 release/moc_envoyermail.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QDialog \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/qdialog.h \
@@ -733,7 +742,7 @@ release/moc_envoyermail.cpp: C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QDi
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		../AffidSmtp/dialogue/envoyermail.h
-	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -IF:/github/OutilsSmpt/AffidSmtp/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\dialogue\envoyermail.h -o release\moc_envoyermail.cpp
+	C:\Qt\Qt5.4.0\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.4.0/5.4/mingw491_32/mkspecs/win32-g++ -IF:/github/OutilsSmpt/AffidSmtp -I/curllib -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtGui -IC:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\dialogue\envoyermail.h -o release\moc_envoyermail.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -1380,6 +1389,8 @@ release/curlinterprete.o: ../AffidSmtp/curl/curlinterprete.cpp ../AffidSmtp/curl
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QThread \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qthread.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QFile \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QProcess \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qprocess.h \
 		../AffidSmtp/dialogue/envoyermail.h \
 		../AffidSmtp/configuration.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtWidgets/QMessageBox \
@@ -1597,6 +1608,15 @@ release/traitementthread.o: ../AffidSmtp/traitementthread.cpp ../AffidSmtp/trait
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qfile.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qfiledevice.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qiodevice.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QProcess \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qprocess.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qstringlist.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qdatastream.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qpair.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qregexp.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qstringmatcher.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qshareddata.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qhash.h \
 		../AffidSmtp/configuration.h \
 		../AffidSmtp/curllib/include/curl/curl.h \
 		../AffidSmtp/curllib/include/curl/curlver.h \
@@ -1607,24 +1627,20 @@ release/traitementthread.o: ../AffidSmtp/traitementthread.cpp ../AffidSmtp/trait
 		../AffidSmtp/curllib/include/curl/typecheck-gcc.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QtDebug \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qhash.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qpair.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qmap.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qtextstream.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qlocale.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qshareddata.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qvector.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qpoint.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qset.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qcontiguouscache.h \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QTextStream \
 		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QDate \
-		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qdatetime.h
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/QDir \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qdir.h \
+		C:/Qt/Qt5.4.0/5.4/mingw491_32/include/QtCore/qfileinfo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\traitementthread.o ..\AffidSmtp\traitementthread.cpp
 
 release/envoyermail.o: ../AffidSmtp/dialogue/envoyermail.cpp ../AffidSmtp/dialogue/envoyermail.h \

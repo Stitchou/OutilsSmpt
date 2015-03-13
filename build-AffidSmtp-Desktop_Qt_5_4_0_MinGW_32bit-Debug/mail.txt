@@ -1,20 +1,13 @@
-From: <a.cnda@orange.fr> 
-To: <e.imbart@hotmail.fr> 
-Subject: zmler 
-
+Date: ven., 13 mars 2015 13:23:55 GMT
+From: <a.cnda@orange.fr>
+To: <e.imbart@hotmal.fr>
+Subject: test
 
-ao rz
-er zerzer
- erqdsfdffffffffffffffffffffffffff
+curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+.
 
-ert
- e
-t e
-r
-t eaz
-yae
-e
-
-tre
-ay e
-yre 

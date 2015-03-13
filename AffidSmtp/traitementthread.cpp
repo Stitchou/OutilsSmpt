@@ -26,6 +26,13 @@ size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
     return written;
 }
 
+static size_t read_callback(void *ptr, size_t size, size_t nmemb, FILE *stream)
+{
+  size_t retcode = fread(ptr, size, nmemb, stream);
+
+  return retcode;
+}
+
 TraitementThread::TraitementThread(QObject *parent) : QThread(parent)
 {
     // singleton de configuration serveur
@@ -48,7 +55,7 @@ void TraitementThread::run()
     }
     else if(mode == TraitementThread::Envoyer)
     {
-        envoyerMail2();
+        envoyerMail();
     }
 }
 
@@ -71,7 +78,7 @@ void TraitementThread::listerMail()
         if(configServeur->getPopSecuriser())
         {
             adressePop = "pop3s://";
-            curl_easy_setopt(curl, CURLOPT_CAINFO, "./debug/ca-bundle.crt");
+            curl_easy_setopt(curl, CURLOPT_CAINFO, "./curl-ca-bundle.crt");
         }
         else
             adressePop = "pop3://";
@@ -79,10 +86,8 @@ void TraitementThread::listerMail()
         adressePop += configServeur->getAdressePOP();        
         curl_easy_setopt(curl, CURLOPT_URL,adressePop.toStdString().c_str());
 
-        // callback de sauvegarde
-        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
-
         curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
 
         res = curl_easy_perform(curl);
 
@@ -98,6 +103,120 @@ void TraitementThread::listerMail()
     emit sendTraitementEnCours(QString("Fin de la recherche"));
     this->sleep(1);
     creerListeDeMail();
+}
+
+void TraitementThread::reformater()
+{
+    QFile fic("mail.txt");
+    if(fic.open(QIODevice::WriteOnly))
+    {
+        QTextStream flux(&fic);
+
+        QString formatage = "Date: "+QDate::currentDate().toString("ddd, dd MMM yyyy") +" "+
+                            QTime::currentTime().toString("hh:mm:ss")+" GMT\r\n";
+
+        flux << formatage;
+        formatage = "From: <"+mailFrom+">\r\n";
+        flux << formatage;
+        formatage = "To: <"+mailTo+">\r\n";
+        flux << formatage;
+        formatage = "Subject: "+mailObject+"\r\n";
+        flux << formatage;
+        flux << "\r\n";
+        formatage = mailBody+"\r\n.\r\n";
+        flux << formatage;
+        flux <<"\r\n";
+
+        fic.close();
+    }
+}
+
+void TraitementThread::envoyerMail()
+{
+    FILE *file_debug=NULL;
+    QString path = QDir::currentPath()+"/toto.txt";
+    file_debug = fopen(path.toStdString().c_str(), "a+");   //open the specified file on local host
+
+    reformater();
+
+    FILE *hd_src;
+    path = QDir::currentPath()+"/mail.txt";
+    hd_src = fopen(path.toStdString().c_str(), "r");
+
+
+
+    struct curl_slist *recipients = NULL;
+
+    curl = curl_easy_init();
+
+    if(curl)
+    {
+        emit sendTraitementEnCours(QString("Envoie du mail en cours"));
+        // usernamse
+        curl_easy_setopt(curl, CURLOPT_USERNAME,
+                        configServeur->getIdentifiantConnexion().toStdString().c_str());
+        // password
+        curl_easy_setopt(curl, CURLOPT_PASSWORD,
+                        configServeur->getMostDePasseConnexion().toStdString().c_str());
+
+        QString adresseSMTP ;
+        if(configServeur->getSmtpSecuriser())
+        {
+           adresseSMTP = "smtps://";
+           curl_easy_setopt(curl, CURLOPT_CAINFO, "./certificat.pem");
+           curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, false);
+        }
+        else
+           adresseSMTP = "smtp://";
+
+        adresseSMTP += configServeur->getAdressSMTP();
+        if(configServeur->getRequiertAuthentification() && !configServeur->getSmtpSecuriser())
+        {
+            adresseSMTP += ":587";
+            curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, false);
+        }
+        // adresse smtp
+        curl_easy_setopt(curl, CURLOPT_URL, adresseSMTP.toStdString().c_str());
+        // From
+        curl_easy_setopt(curl, CURLOPT_MAIL_FROM,
+                                configServeur->getAdresseMessagerie().toStdString().c_str());
+        //TO
+        recipients = curl_slist_append(recipients, mailTo.toStdString().c_str());
+                curl_easy_setopt(curl, CURLOPT_MAIL_RCPT, recipients);
+
+        curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
+        curl_easy_setopt(curl, CURLOPT_READFUNCTION, read_callback);
+        curl_easy_setopt(curl, CURLOPT_READDATA, hd_src);
+        curl_easy_setopt(curl, CURLOPT_UPLOAD, 1L);
+
+        if(configServeur->getLogActions())
+        {
+            curl_easy_setopt(curl, CURLOPT_STDERR,file_debug);
+        }
+
+        /* Send the message */
+
+        res = curl_easy_perform(curl);
+
+        /* Check for errors */
+        if(res != CURLE_OK)
+        fprintf(stderr, "curl_easy_perform() failed: %s\n",
+                curl_easy_strerror(res));
+
+      /* Always cleanup */
+      curl_easy_cleanup(curl);
+
+      // fermeture des fichiers
+      fclose(file_debug);
+      fclose(hd_src);
+
+      // log
+      if(configServeur->getLogActions())
+          ecrirelog(1);
+      this->sleep(1);
+      emit fini();
+   }
+
 }
 
 
@@ -159,6 +278,7 @@ void TraitementThread::envoyerMail2()
     }
     cmd->start("curl.exe",arg);
     cmd->waitForFinished(5000);
+
     if(configServeur->getLogActions())
         ecrirelog(1);
     fic->remove();
@@ -225,8 +345,7 @@ void TraitementThread::creerListeDeMail()
     toto.clear();
     FILE *file_debug=NULL;
     QString path = QDir::currentPath()+"/logs.txt";
-    file_debug = fopen(path.toStdString().c_str(), "a+");   //open the specified file on local host
-
+    file_debug = fopen(path.toStdString().c_str(), "a+");
 
     for(int i = 0; i < compteur.size(); i+=2)
     {
@@ -246,7 +365,7 @@ void TraitementThread::creerListeDeMail()
             if(configServeur->getPopSecuriser())
             {
                 adressePop = "pop3s://";
-                curl_easy_setopt(curl, CURLOPT_CAINFO, "./debug/curl-ca-bundle.crt");
+                curl_easy_setopt(curl, CURLOPT_CAINFO, "./curl-ca-bundle.crt");
             }
             else
                 adressePop = "pop3://";
@@ -254,11 +373,8 @@ void TraitementThread::creerListeDeMail()
             adressePop += configServeur->getAdressePOP() + "/"+compteur.at(i).left(compteur.at(i).indexOf(" "));
             curl_easy_setopt(curl, CURLOPT_URL,adressePop.toStdString().c_str());
 
-            // callback de sauvegarde
-            curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
-
             curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
-
+            curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
             if(configServeur->getLogActions())
             {
                 curl_easy_setopt(curl, CURLOPT_STDERR,file_debug);

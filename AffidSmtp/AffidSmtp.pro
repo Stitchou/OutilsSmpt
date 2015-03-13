@@ -6,10 +6,10 @@
 
 QT       += core gui
 
-INCLUDEPATH += F:/github/OutilsSmpt/AffidSmtp/curllib/
+INCLUDEPATH += /curllib/
 
-LIBS += F:/github/OutilsSmpt/AffidSmtp/curllib/lib/libcurldll.a
-LIBS += F:/github/OutilsSmpt/AffidSmtp/curllib/lib/libcurl.a
+LIBS += -L"$$PWD/curllib/lib/" libcurldll
+LIBS += -L"$$PWD/curllib/lib/" libcurl
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
