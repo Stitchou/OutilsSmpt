@@ -25,13 +25,15 @@ private:
     EnvoyerMail *envoyer;
     int mode;
 
-    QString sujet,body,to;
+    QString sujet,body,to,pieceJointe;
+    bool isOk;
 
 signals:
 
 private slots:
     void terminerProgression();
-    void recevoirParams(QString a_to, QString a_subject, QString a_body);
+    void recevoirParams(QString a_to, QString a_subject, QString a_body, QString piece);
+    void afficheErreur(QString msg);
 };
 
 #endif // CURLINTERPRETE_H

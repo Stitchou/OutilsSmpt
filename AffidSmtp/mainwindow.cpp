@@ -3,7 +3,7 @@
 
 // importation des classes
 #include "./dialogue/configurationsesamvitale.h"
-#include "../curl/curlinterprete.h"
+#include "./curl/curlinterprete.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

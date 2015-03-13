@@ -375,3 +375,1466 @@ vendredi 13 mars 2015   13:23:57
 
  ---------------------- 
  fin 
+
+
+
+vendredi 13 mars 2015   16:22:33
+
+ LISTING
+ ----------------------
+
+ *   Trying 80.12.242.149...
+* Connected to pop.orange.fr (80.12.242.149) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 1
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+*   Trying 80.12.242.149...
+* Connected to pop.orange.fr (80.12.242.149) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 2
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+*   Trying 80.12.242.149...
+* Connected to pop.orange.fr (80.12.242.149) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 3
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+*   Trying 80.12.242.149...
+* Connected to pop.orange.fr (80.12.242.149) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 4
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+*   Trying 80.12.242.149...
+* Connected to pop.orange.fr (80.12.242.149) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 5
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   16:23:35
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d14 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d14 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr>
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 33Pz1q00d57bQA7033PzmG mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   16:43:00
+
+ LISTING
+ ----------------------
+
+ *   Trying 80.12.242.149...
+* Connected to pop.orange.fr (80.12.242.149) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 1
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+*   Trying 80.12.242.149...
+* Connected to pop.orange.fr (80.12.242.149) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 2
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+*   Trying 80.12.242.149...
+* Connected to pop.orange.fr (80.12.242.149) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 3
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+*   Trying 80.12.242.149...
+* Connected to pop.orange.fr (80.12.242.149) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 4
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+*   Trying 80.12.242.149...
+* Connected to pop.orange.fr (80.12.242.149) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 5
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   16:43:19
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   16:44:21
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   16:45:22
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   16:45:51
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   16:46:53
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   16:48:09
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   17:02:54
+
+ LISTING
+ ----------------------
+
+ 
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   17:03:06
+
+ LISTING
+ ----------------------
+
+ *   Trying 80.12.242.51...
+* Connected to pop.orange.fr (80.12.242.51) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 1
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+*   Trying 80.12.242.51...
+* Connected to pop.orange.fr (80.12.242.51) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 2
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+*   Trying 80.12.242.51...
+* Connected to pop.orange.fr (80.12.242.51) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 3
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+*   Trying 80.12.242.51...
+* Connected to pop.orange.fr (80.12.242.51) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 4
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+*   Trying 80.12.242.51...
+* Connected to pop.orange.fr (80.12.242.51) port 995 (#0)
+* successfully set certificate verify locations:
+*   CAfile: ./curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.0 / DHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=FR; ST=Bretagne; L=Cesson-Sevigné; O=Orange; OU=Orange; CN=pop.orange.fr
+* 	 start date: 2014-10-03 00:00:00 GMT
+* 	 expire date: 2015-12-12 23:59:59 GMT
+* 	 subjectAltName: pop.orange.fr matched
+* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)10; CN=VeriSign Class 3 Secure Server CA - G3
+* 	 SSL certificate verify ok.
+< +OK POP3 ready
+> CAPA
+< +OK Capability list follows
+< TOP
+< USER
+< SASL LOGIN PLAIN
+< .
+> AUTH LOGIN
+< + VXNlcm5hbWU6
+> YS5jbmRh
+< + UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< +OK Mailbox locked and ready
+> RETR 5
+< +OK Message follows
+* Connection #0 to host pop.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   18:25:56
+
+ ENVOI
+ ----------------------
+
+ zerzer
+zer
+z
+er
+ze
+rz
+er
+ze
+rzz* Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=331
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 35SM1q00H57bQA7035SM6V mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   18:37:10
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=280
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 35ai1q00M57bQA7035aiqF mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+* Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=237
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 35db1q00R57bQA7035dbYy mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   18:44:19
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=283
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 35kP1q00f57bQA7035kQ2t mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   18:46:44
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=709
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 35n91q00557bQA7035n9az mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   18:47:48
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=732
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 35oD1q00457bQA7035oDnn mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   18:51:35
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=335
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 35rz1q00N57bQA7035s0a8 mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   18:52:51
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=308
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<zerzerzerze>
+< 550 5.5.0 <zerzerzerze> domain name required
+* RCPT failed: 550
+> QUIT
+< 221 2.0.0 mwinf5d27 ME closing connection
+* Closing connection 0
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   18:53:23
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=311
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmai.fr>
+< 250 2.1.5 <e.imbart@hotmai.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 35tk1q00U57bQA7035tlv2 mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   18:54:49
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=312
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 35vD1q00V57bQA7035vEAV mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:01:14
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=324
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 361e1q00T57bQA70361fS8 mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:02:50
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=318
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 363F1q00H57bQA70363Fky mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:03:51
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=310
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 364G1q00J57bQA70364GuF mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:05:28
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=313
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 365t1q00N57bQA70365tAn mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:06:42
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=304
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<ezr>
+< 550 5.5.0 <ezr> domain name required
+* RCPT failed: 550
+> QUIT
+< 221 2.0.0 mwinf5d27 ME closing connection
+* Closing connection 0
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:06:53
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=319
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 367J1q00B57bQA70367JPf mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:08:12
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=327
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 368d1q00357bQA70368dem mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:09:39
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=320
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.Fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 36A41q00H57bQA7036A4wT mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:22:00
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=551
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 36NQ1q00P57bQA7036NR9A mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:23:19
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=595
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 36Pk1q00857bQA7036PkNo mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:24:39
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=577
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 36R41q00D57bQA7036R4fa mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:38:39
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=558
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 36f21q00G57bQA7036f4AP mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+vendredi 13 mars 2015   19:40:59
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d27 ME ESMTP server ready
+> EHLO Emerich-PC
+< 250-mwinf5d27 hello [31.34.155.237], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=441
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.Fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 36hQ1q00657bQA7036hQWF mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 

@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_CurlInterprete_t {
-    QByteArrayData data[7];
-    char stringdata[73];
+    QByteArrayData data[10];
+    char stringdata[97];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,11 +35,15 @@ QT_MOC_LITERAL(2, 35, 0), // ""
 QT_MOC_LITERAL(3, 36, 14), // "recevoirParams"
 QT_MOC_LITERAL(4, 51, 4), // "a_to"
 QT_MOC_LITERAL(5, 56, 9), // "a_subject"
-QT_MOC_LITERAL(6, 66, 6) // "a_body"
+QT_MOC_LITERAL(6, 66, 6), // "a_body"
+QT_MOC_LITERAL(7, 73, 5), // "piece"
+QT_MOC_LITERAL(8, 79, 13), // "afficheErreur"
+QT_MOC_LITERAL(9, 93, 3) // "msg"
 
     },
     "CurlInterprete\0terminerProgression\0\0"
-    "recevoirParams\0a_to\0a_subject\0a_body"
+    "recevoirParams\0a_to\0a_subject\0a_body\0"
+    "piece\0afficheErreur\0msg"
 };
 #undef QT_MOC_LITERAL
 
@@ -49,7 +53,7 @@ static const uint qt_meta_data_CurlInterprete[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -57,12 +61,14 @@ static const uint qt_meta_data_CurlInterprete[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   24,    2, 0x08 /* Private */,
-       3,    3,   25,    2, 0x08 /* Private */,
+       1,    0,   29,    2, 0x08 /* Private */,
+       3,    4,   30,    2, 0x08 /* Private */,
+       8,    1,   39,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::QString,    4,    5,    6,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::QString, QMetaType::QString,    4,    5,    6,    7,
+    QMetaType::Void, QMetaType::QString,    9,
 
        0        // eod
 };
@@ -73,7 +79,8 @@ void CurlInterprete::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         CurlInterprete *_t = static_cast<CurlInterprete *>(_o);
         switch (_id) {
         case 0: _t->terminerProgression(); break;
-        case 1: _t->recevoirParams((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< QString(*)>(_a[3]))); break;
+        case 1: _t->recevoirParams((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< QString(*)>(_a[3])),(*reinterpret_cast< QString(*)>(_a[4]))); break;
+        case 2: _t->afficheErreur((*reinterpret_cast< QString(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -104,13 +111,13 @@ int CurlInterprete::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }

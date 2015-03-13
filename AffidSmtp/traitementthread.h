@@ -17,8 +17,6 @@ public:
     ~TraitementThread();
     void run();
 
-
-
     enum Mode
     {
         Lister,
@@ -27,11 +25,12 @@ public:
 
     int getMode() const;
     void setMode(int value);
-    void setParams(QString a_sujet, QString a_body, QString a_to, QString a_from);
+    void setParams(QString a_sujet, QString a_body, QString a_to, QString a_from,QString piece);
 
 signals:
     void sendTraitementEnCours(QString message);
     void fini();
+    void erreur(QString msg);
 
 public slots:
 
@@ -40,7 +39,7 @@ private:
     Configuration * configServeur;
     QFile *fic;
     QString contenue;
-    QString mailFrom, mailTo, mailBody, mailObject;
+    //QString mailFrom, mailTo, mailBody, mailObject,pieceJointe;
     QProcess * cmd;
 
     void creerListeDeMail();
@@ -48,7 +47,6 @@ private:
     void listerMail();
     void reformater();
     void envoyerMail();
-    void envoyerMail2();
     void ecrirelog(int mode = 0);
 private slots:
     void readOutput();

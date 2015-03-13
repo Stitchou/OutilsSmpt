@@ -20,10 +20,11 @@ private:
     Ui::EnvoyerMail *ui;
 
 signals:
-    void envoyerParams(QString to, QString subject, QString body);
+    void envoyerParams(QString to, QString subject, QString body,QString piece);
 
 private slots:
     void valider();
+    void parcourir();
 };
 
 #endif // ENVOYERMAIL_H

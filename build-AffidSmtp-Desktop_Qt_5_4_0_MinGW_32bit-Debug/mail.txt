@@ -1,13 +1,684 @@
-Date: ven., 13 mars 2015 13:23:55 GMT
+Date: ven., 13 mars 2015 16:23:34 GMT
 From: <a.cnda@orange.fr>
-To: <e.imbart@hotmal.fr>
-Subject: test
+To: <e.imbart@hotmail.fr>
+Subject: test avec loic 
 
-curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
-curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
-curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
-curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
-curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
-curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+
+D�marrage de F:\github\OutilsSmpt\build-AffidSmtp-Desktop_Qt_5_4_0_MinGW_32bit-Debug\debug\AffidSmtp.exe...
+wchodze do detekcji1 2516
+
+2 2568
+3 8207
+4 24699
+5 16832
+Return-Path: <01999@999.01.rss.fr>
+Received: from mwinf5c60 (mwinf5c60.me-wanadoo.net [10.223.111.110])
+	 by mwinb1k02 with LMTPA;
+	 Thu, 24 Jan 2013 11:48:59 +0100
+X-Sieve: CMU Sieve 2.3
+Received: from smtp-out.rsv.rss.fr ([160.92.112.178])
+	by mwinf5c60 with ME
+	id rmoy1k02F3qzlcY01mozUX; Thu, 24 Jan 2013 11:48:59 +0100
+X-bcc: a.cnda@orange.fr
+X-ME-bounce-domain: orange.fr
+X-ME-engine: default
+X-me-spamrating: 40.00
+X-me-spamcause: (0)(0000)gggruggvucftvghtrhhoucdtuddrfeehledrjeekgddvfecutefuodetggcurfhrohhfihhlvgemucfogfenuceurghilhhouhhtmecugedttdenucenucfhrhhomheptdduleelleesleelledrtddurdhrshhsrdhfrhenucfjughrpeffkfgjuffhvfgtgfggseerueertddttddt
+X-me-spamlevel: not-spam
+X-ME-IP: 160.92.112.178
+X-ME-Entity: ofr
+Received: from msevf0103.atos-internet.rss.fr (msevf0103 [172.23.17.25])
+	by msevf0109.atos-internet.rss.fr (Postfix) with ESMTP id D2D527000091
+	for <a.cnda@orange.fr>; Thu, 24 Jan 2013 11:48:58 +0100 (CET)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+
+	by msevf0103.atos-internet.rss.fr (Postfix) with ESMTP id A55561C00008A
+	for <a.cnda@orange.fr>; Thu, 24 Jan 2013 11:48:58 +0100 (CET)
+Received: by Mail Scanner.
+X-GIESVAWMSGID: 20130124104858_661782010318877
+Received: from smtp-rsv.rss.fr (unknown [10.254.19.34])
+	by msevf0103.atos-internet.rss.fr (Postfix) with ESMTP id 644471C000086
+	for <a.cnda@orange.fr>; Thu, 24 Jan 2013 11:48:58 +0100 (CET)
+Date: Thu, 24 Jan 2013 11:48:58 +0100 (NFT)
+Message-Id: <SV/00000001019900/2013012411462063578@smtp-rsv.rss.fr>
+In-Reply-To: SV140200/00000001019900/2013012411445500001/00001
+Subject: SV/00000001019900/2013012411462063578
+From: 01999@999.01.rss.fr
+To: a.cnda@orange.fr
+X-XaM3-API-Version: 1.1.9
+Content-Type: Application/EDI-consent
+Content-Description: ARLDEMO/NOEMIE
+Content-Transfer-Encoding: BASE64
+MIME-Version: 1.0
+
+MDAwQ1QwMDAwMDAwMTAwMDk5OUZST05UTFRQMDAwMDAwMDEwMTk5MDAgICAgICBBUkE1MTU3
+NzI0MDExMzkzMCAgIDBOICAgICAgICAgICAgIDEyOCAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAwNDAwMTAwMDAwMDAwMTAxOTkwMEAwODAwMjI0MDExMzAw
+MUAyOTA5OTAwICAgICAgICAgIE5PTUJSRSBERSBGQUNUVVJFUyA6IDAwMDAxICAgIE1PTlRB
+TlQgVE9UQUwgRFUgTE9UIDogMDAwMDAyMywwMCAgICAgICAgICAgICAgICAgQDk5MDAyMjQw
+MTEzMDAxICAgICAgICAwMDAwMDAwMTAwMDAwMDAyMzAwUEA5OTAwMTAwMDAwMDAwMTAxOTkw
+MCAgMDAwMDAwMDEwMDAwMDAwMjMwMFBAOTk5Q1QwMDAwMDAwMTAwMDk5OUZST05UTFRQMDAw
+MDAwMDEwMTk5MDAgICAgICBBUkE1MTU3NzAwMDAwMDA3ICAgICAgICAgICAgICAgICAgIDAw
+MTAwMDAwMDAyMzAwUCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA=
+
+
+Return-Path: <01349@349.01.rss.fr>
+Received: from mwinf5c44 (mwinf5c44.me-wanadoo.net [10.223.111.94])
+	 by mwinb1e02 with LMTPA;
+	 Tue, 23 Dec 2014 15:42:27 +0100
+X-Sieve: CMU Sieve 2.3
+Received: from smtp-out.rsv.rss.fr ([160.92.112.178])
+	by mwinf5c44 with ME
+	id X2iT1p00U3qzlcY012iT0s; Tue, 23 Dec 2014 15:42:27 +0100
+X-bcc: a.cnda@orange.fr
+X-ME-bounce-domain: orange.fr
+X-ME-engine: default
+X-me-spamcause: (60)(0000)gggruggvucftvghtrhhoucdtuddrfeejiedrkeelgdegvdcutefuodetggcurfhrohhfihhlvgemucfogfenuceurghilhhouhhtmecugedttdenucgorfhoshhtfhhigiduucdliedtmdenucfjughrpeffkfgjuffhvfgtgfggseerueertddttddtnecuhfhrohhmpedtudefgeelseefgeelrddtuddrrhhsshdrfhhr
+X-me-spamlevel: not-spam
+X-ME-Helo: smtp-out.rsv.rss.fr
+X-ME-IP: 160.92.112.178
+X-ME-Entity: ofr
+Received: from msevf0201.atos-internet.rss.fr (msevf0201.priv.atos.fr [10.34.64.21])
+	by msevf0206.atos-internet.rss.fr (Postfix) with ESMTP id 3k6KyW2TSGz18VQ5M
+	for <a.cnda@orange.fr>; Tue, 23 Dec 2014 15:42:27 +0100 (CET)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by msevf0201.atos-internet.rss.fr (Postfix) with ESMTP id 3k6KyW27vzz18VQ6R
+	for <a.cnda@orange.fr>; Tue, 23 Dec 2014 15:42:27 +0100 (CET)
+Received: by Mail Scanner.
+X-GIESVAWMSGID: 20141223144227_293671020130819
+Received: from 55.228.11.4 (unknown [10.253.2.26])
+	by msevf0201.atos-internet.rss.fr (Postfix) with ESMTP id 3k6KyV6SW9z18VQ6L
+	for <a.cnda@orange.fr>; Tue, 23 Dec 2014 15:42:26 +0100 (CET)
+Date: Tue, 23 Dec 2014 15:42:26 +0100 (NFT)
+Message-Id: <SV/00000991068537/2014122315420015583@55.228.11.4>
+
+In-Reply-To: SV140200/00000991068537/2014122315400500008/00009
+Subject: SV/00000991068537/2014122315420015583
+From: 01349@349.01.rss.fr
+To: a.cnda@orange.fr
+X-XaM3-API-Version: 1.1.9
+Content-Type: Application/EDI-consent
+Content-Description: ARLTEST/NOEMIE
+Content-Transfer-Encoding: BASE64
+MIME-Version: 1.0
+
+MDAwQ1QwMDAwMDAwMTAwMDM0OUZST05UTFRQMDAwMDA5OTEwNjg1MzcgICAgICBBUkE4Mjg3
+NDIzMTIxNDkzMCAgIDBOICAgICAgICAgICAgIDEyOCAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAwNDAwMTAwMDAwMDk5MTA2ODUzN0AwODAwMjIzMTIxNDE1
+NUAyOTA5OTAwNDAwMiAgICAgIExvZ2ljaWVsIFBTIG5vbiBhZ3JlZSAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQDk5MDAyMjMx
+MjE0MTU1ICAgICAgICAwMDAwMDAwMTAwMDAwMDQyODkyUEA5OTAwMTAwMDAwMDk5MTA2ODUz
+NyAgMDAwMDAwMDEwMDAwMDA0Mjg5MlBAOTk5Q1QwMDAwMDAwMTAwMDM0OUZST05UTFRQMDAw
+MDA5OTEwNjg1MzcgICAgICBBUkE4Mjg3NDAwMDAwMDA3ICAgICAgICAgICAgICAgICAgIDAw
+MTAwMDAwMDQyODkyUCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA=
+
+
+
+Return-Path: <contact@univers-shopping.com>
+Received: from mwinf5c37 (mwinf5c37.me-wanadoo.net [10.223.111.87])
+	 by mwinb1e02 with LMTPA;
+	 Sat, 31 Jan 2015 19:18:07 +0100
+X-Sieve: CMU Sieve 2.3
+Received: from univers-shopping.com ([89.36.233.160])
+	by mwinf5c37 with ME
+	id miJ71p00W3UJJFt01iJ7Ae; Sat, 31 Jan 2015 19:18:07 +0100
+X-bcc: a.cnda@wanadoo.fr
+X-ME-bounce-domain: wanadoo.fr
+X-ME-engine: default
+X-me-spamcause: (0)(0000)gggruggvucftvghtrhhoucdtuddrfeejkedrgedtgddvkecutefuodetggcurfhrohhfihhlvgemucfogfenuceurghilhhouhhtmecugedttdenucenucfjughrpefvffggtgfrhffusehhtddttddttdejnecuhfhrohhmpeetlhgrrhhmvgcuvehomhhprghrrghtihhfuceotghonhhtrggtthesuhhnihhvvghrshdqshhhohhpphhinhhgrdgtohhmqeenucffohhmrghinheprghffhhilhhirgifvggsrdhfrhdpmhhonhguvgdqvhhohigrghgvshdrtghomh
+X-me-spamlevel: not-spam
+X-ME-Helo: univers-shopping.com
+X-ME-IP: 89.36.233.160
+X-ME-Entity: ofr
+Received: from univers-shopping.com (localhost.localdomain [127.0.0.1])
+	by univers-shopping.com (8.14.4/8.14.4) with ESMTP id t0VII9I8032529
+	for <a.cnda@wanadoo.fr>; Sat, 31 Jan 2015 13:18:09 -0500
+Received: (from root@localhost)
+	by univers-shopping.com (8.14.4/8.14.4/Submit) id t0VII9mx032528
+	for a.cnda@wanadoo.fr; Sat, 31 Jan 2015 13:18:09 -0500
+Message-Id: <201501311818.t0VII9mx032528@univers-shopping.com>
+To: a.cnda@wanadoo.fr
+Date: Sat, 31 Jan 2015 18:18:09 UTC
+MIME-version: 1.0
+Content-type: text/html; charset=utf-8
+X-Priority: 3
+From: Alarme Comparatif <contact@univers-shopping.com>
+Subject: +1 cambriolage par minute en france Réagissez, protégez-vous !
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>alarme-comparatif.fr</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<style type="text/css">
+*{
+	   margin: 0 auto;
+	   padding:0;
+}
+
+a{
+	   margin: 0 !important;
+	   padding:0 !important;
+	   text-decoration:none;
+	   display:block;
+}
+</style>
+
+</head>
+
+<body bgcolor="#f5f5f5" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center">
+    <tr>
+        <td>
+         <p style="margin:0; padding:0px; width:100%; color:black;	font-family:arial;	font-size:10px;	text-align:center;	font-family: arial;">
+           Si vous n'arrivez pas �  lire correctement ce mail, 
+           <a style="display:inline;" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=1064&base=4305&visu=2582&sub=M285906&n=1" target="_blank"><strong>voir ici</strong></a><br/>          
+           Nous respectons votre vie privée : pour gérer votre abonnement ou vous désinscrire, rendez-vous tout en bas de ce message.
+        </p>
+        </td>
+    </tr>
+</table>
+<br/>
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center">   
+	
+   <td width="600" height="104" >
+   		<a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=1064&base=4305&visu=2582&sub=M285906&n=2" target="_blank" title="Alarme-comparatif.fr" style="margin:0; padding:0; text-decoration:none;display:block;">
+
+        	<img style="margin:0 !important;padding:0 !important;display:block;border:none;"  src="http://www.affiliaweb.fr/admin/visuels/1064/images2582/alarme-newsletter_01b.jpg" width="600" height="104" alt="Alarme-comparatif.fr">
+        </a>
+   </td>
+    
+    <tr>
+		<td width="600" height="97" bgcolor="#ffffff">
+			<p style=" color: #f26a20;text-align:center; font-size:30px; font-family: "Century Gothic", arial; font-weight: bold;margin:0;padding:0">
+                 +1 cambriolage par minute en france
+                 <span style="color:#000000; font-size:26px;">Réagissez, protégez-vous !</span> 
+            </p>
+        </td>
+	</tr>
+    
+    <tr>
+		<td width="600" height="272">
+        	<a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=1064&base=4305&visu=2582&sub=M285906&n=3" target="_blank" title="Simulation Gratuite" style="margin:0; padding:0; text-decoration:none;display:block;">
+
+				<img style="margin:0 !important;padding:0 !important;display:block;border:none;"  src="http://www.affiliaweb.fr/admin/visuels/1064/images2582/alarme-newsletter_08.jpg"  alt="Simulation Gratuite">
+            </a>
+        </td>
+	</tr>
+     
+     <tr>
+		<td width="600" height="41">
+			<img style="margin:0 !important;padding:0 !important;display:block;border:none;"  src="http://www.affiliaweb.fr/admin/visuels/1064/images2582/alarme-newsletter_09.jpg"  alt="">
+        </td>
+	</tr>
+    
+    <tr>
+		<td>
+        	<table width="600" border="0" cellpadding="0" cellspacing="0" >
+                <tr>
+                    <td width="57" height="41" >
+                        <img style="margin:0 !important;padding:0 !important;display:block;border:none;"  src="http://www.affiliaweb.fr/admin/visuels/1064/images2582/alarme-newsletter_10.jpg" alt="">
+                    </td>
+                    <td width="289" height="41" bgcolor="#ffffff" valign="middle" >
+                        <p style=" color: #000000;text-align:left; font-size:16px; font-family: "Century Gothic", arial; font-weight:normal;margin:0;padding:0" >
+                              L'alarme : un moyen de dissuasion
+                        </p>
+                    </td>
+                    <td width="254" height="41">
+                        <img style="margin:0 !important;padding:0 !important;display:block;border:none;"  src="http://www.affiliaweb.fr/admin/visuels/1064/images2582/alarme-newsletter_12.jpg"  alt="">
+                    </td>
+                </tr>
+            </table>
+       </td>
+	</tr>
+    
+	<tr>
+		<td>
+        	<table width="600" border="0" cellpadding="0" cellspacing="0" >
+                <tr>
+                    <td width="346" height="125" bgcolor="#ffffff" valign="top">
+                        <p style=" color: #000000;text-align:left; font-size:15px; font-family: "Century Gothic", arial; font-weight:normal;margin:0;padding:0; width:325px; margin-left:16px";>
+                        <strong>L'alarme</strong> est souvent synonyme de <strong>tranquillité</strong>
+                        et repose sur un chiffre éloquent. <br/>
+                        <strong>90 %</strong> des cambrioleurs <strong>abandonnent</strong> leurs <br/>
+                        actions dès qu'une alarme retentie. <br/>
+                        </p>
+                    </td>
+                    <td  width="254" height="125">
+                        <img style="margin:0 !important;padding:0 !important;display:block;border:none;"  src="http://www.affiliaweb.fr/admin/visuels/1064/images2582/alarme-newsletter_14.jpg" alt="">
+                    </td>
+                </tr>
+             </table>
+        </td>
+	</tr>
+    
+    <tr>
+		<td width="600" height="39" bgcolor="#f26a20">
+			<p style=" width:100%; color: #ffffff;	text-align:center;	font-size:11px;	margin-top:5px;	font-family: arial;">
+               Conformément �  la loi "informatique et libertés" du 6 janvier 1978, vous disposez d'un droit d'accès<br/>
+
+                et de rectification aux données personnelles vous concernant.  
+            </p>
+        </td>
+	</tr>
+    
+</table>
+
+
+<table width="710" border="0" cellpadding="0" cellspacing="0" align="center">
+	   <tr>
+            <td align="center" style="text-align:center"><font face="arial" size="1" style="font-size:11px;line-height:40px;color:#8C8C8C; " color="#8C8C8C">Si vous souhaitez etre retir&eacute; de notre liste de diffusion, merci de ce rendre sur <a href="http://www.monde-voyages.com/compagnes/devisplus.alarme/un.php?email=M285906&cmp=8" style="padding:0;margin:0; color:#c5577b;">ce lien</a>.</font></td>
+			<td style="clear:both;"></td>
+            </tr>
+	  
+	  </table>
+	  <img src="http://www.monde-voyages.com/compagnes/devisplus.alarme/reader.php?email=M285906&cmp=8&date=2015-01-31 18:18:09" width="1" height="1" border="0" />
+<img src="http://www.affiliaweb.fr/tracking/cpm.php?camp=1064&base=4305&visu=2582&sub=M285906" width="1" height="1" border="0" /></body>
+
+</html>
+Return-Path: <contact@univers-shopping.com.com>
+Received: from mwinf5c36 (mwinf5c36.me-wanadoo.net [10.223.111.86])
+	 by mwinb1e02 with LMTPA;
+	 Fri, 06 Feb 2015 23:16:49 +0100
+X-Sieve: CMU Sieve 2.3
+Received: from univers-shopping.com ([89.36.233.159])
+	by mwinf5c36 with ME
+	id pAGo1p00P3T0dvd01AGorP; Fri, 06 Feb 2015 23:16:48 +0100
+X-bcc: a.cnda@wanadoo.fr
+X-ME-bounce-domain: wanadoo.fr
+X-ME-engine: default
+X-me-spamcause: (-108)(0000)gggruggvucftvghtrhhoucdtuddrfeejkedriedtgddvudcutefuodetggcurfhrohhfihhlvgemucfogfenuceurghilhhouhhtmecugedttdenucdnvffguffvqdfqrhgrnhhgvgevofculddquddtkedmnecujfgurhepvfffgggtrffhufeshhdttddttddtjeenucfhrhhomhepffgvvhhishcuodcuoegtohhnthgrtghtsehunhhivhgvrhhsqdhshhhophhpihhnghdrtghomhdrtghomheqnecuffhomhgrihhnpehmohhnuggvqdgsihgvnhdqvghtrhgvrdgtohhmpdgrfhhfihhlihgrfigvsgdrfhhrpdhmohhnuggvqdhvohihrghgvghsrdgtohhm
+X-me-spamlevel: not-spam
+X-ME-Helo: univers-shopping.com
+X-ME-IP: 89.36.233.159
+X-ME-Entity: ofr
+Received: from univers-shopping.com (localhost.localdomain [127.0.0.1])
+	by univers-shopping.com (8.14.4/8.14.4) with ESMTP id t16MGlNo012507
+	for <a.cnda@wanadoo.fr>; Fri, 6 Feb 2015 17:16:48 -0500
+Received: (from root@localhost)
+	by univers-shopping.com (8.14.4/8.14.4/Submit) id t16MGl8Z012506
+	for a.cnda@wanadoo.fr; Fri, 6 Feb 2015 17:16:47 -0500
+Message-Id: <201502062216.t16MGl8Z012506@univers-shopping.com>
+To: a.cnda@wanadoo.fr
+Date: Fri, 06 Feb 2015 22:16:47 UTC
+MIME-version: 1.0
+Content-type: text/html; charset=utf-8
+X-Priority: 3
+From: Devis + <contact@univers-shopping.com.com>
+Subject: Les 4 raisons de changer vos fenetres
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Devis fen&ecirc;tres - Devis+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<table>
+	   <tr>
+            <td align="center" style="text-align:center"><font face="arial" size="1" style="font-size:11px;line-height:40px;color:#8C8C8C; " color="#8C8C8C">Si vous ne parvenez pas &agrave; lire ce message : <a href="http://www.monde-bien-etre.com/compagnes/devisplus/devisplus.html" style="color:#000;" color="#000">Cliquez ici.</a></font></td>
+			<td style="clear:both;"></td>
+            </tr>
+	  
+	  </table>
+ <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="720" height="21" colspan="5" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-top-edge.jpg" width="720" height="21" style="display:block;" border="0" alt=" "/></td>
+      </tr>
+      <tr>
+        <td width="11" height="83" colspan="1" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-grey-left.jpg" width="11" height="83" style="display:block;" border="0" alt=" "/></td>
+        <td width="148" height="83" colspan="1" bgcolor="#f2f2f2" align="center"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=1" style="text-decoration:none; color:#a6d304; font-family:Arial, sans-serif; font-size:40px; font-weight:bold; letter-spacing:-2px;"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/logo.jpg" width="148" height="83" style="display:block;" border="0" alt="Devis+"/></a></td>
+
+        <td width="530" height="83" colspan="1" bgcolor="#f2f2f2" align="right"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=2" style="font-family:Trebuchet MS,Arial,sans-serif; font-size:41px; color:#303030; text-decoration:none;"><strong>Fen&#234;tres, Portes, Volets</strong></a></td>
+        <td width="20" height="83" colspan="1" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/spacer.gif" width="20" height="83" style="display:block;" border="0" alt=" "/></td>
+        <td width="11" height="83" colspan="1" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-grey-right.jpg" width="11" height="83" style="display:block;" border="0" alt=" "/></td>
+
+      </tr>
+    </table>
+
+    <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="11" height="22" bgcolor="#a6d304"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-green-left.jpg" width="11" height="22" style="display:block;" border="0" alt=" "/></td>
+        <td width="698" height="22" bgcolor="#a6d304" align="center"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=3" style="font-family:Trebuchet MS,Arial,sans-serif; font-size:13px; color:#303030; text-decoration:none;"><em><strong>Des partenaires professionnels s&#233;lectionn&#233;s dans votre r&#233;gion</strong> pour effectuer vos travaux en toute confiance.</em></a></td>
+        <td width="11" height="22" bgcolor="#a6d304"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-green-right.jpg" width="11" height="22" style="display:block;" border="0" alt=" "/></td>
+      </tr>
+    </table>
+
+    <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="720" height="143" bgcolor="#303030" colspan="4"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=4" style="text-decoration:none;"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/fenetre-classique-haut.jpg" width="720" height="143" style="display:block;" border="0" alt=" "/></a></td>
+      </tr>
+      <tr>
+        <td width="422" height="130" bgcolor="#303030" colspan="1"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=5" style="text-decoration:none;"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/fenetre-classique-gauche.jpg" width="422" height="130" style="display:block;" border="0" alt=" "/></a></td>
+        <td width="205" height="130" bgcolor="#f77f00" colspan="1" align="center"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=6" style="font-family:Trebuchet MS,Arial,sans-serif; color:#fff; text-decoration:none;"><strong style="font-size:22px;">Recevoir 3 devis</strong><br/><strong style="font-size:37px;">GRATUITS</strong></a></td>
+        <td width="63" height="130" bgcolor="#f77f00" colspan="1"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=7" style="text-decoration:none;"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/bouton-fleche.jpg" width="63" height="130" style="display:block;" border="0" alt=" "/></a></td>
+        <td width="30" height="130" bgcolor="#303030" colspan="1"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=8" style="text-decoration:none;"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/fenetre-classique-droite.jpg" width="30" height="130" style="display:block;" border="0" alt=" "/></a></td>
+      </tr>
+      <tr>
+        <td width="720" height="28" bgcolor="#303030" colspan="4"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=9" style="text-decoration:none;"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/fenetre-classique-bas.jpg" width="720" height="28" style="display:block;" border="0" alt=" "/></a></td>
+
+      </tr>
+    </table>
+
+    <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="720" height="23" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/spacer-grey-fullwidth.jpg" width="720" height="23" style="display:block;" border="0" alt=" "/></td>
+      </tr>
+    </table>
+
+    <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="11" height="38" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-grey-left.jpg" width="11" height="38" style="display:block;" border="0" alt=" "/></td>
+        <td width="51" height="38" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/fleche-titre.jpg" width="51" height="38" style="display:block;" border="0" alt=" "/></td>
+
+        <td width="647" height="38" bgcolor="#f2f2f2" valign="top"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=10" style="font-family:Trebuchet MS,Arial,sans-serif; font-size:24px; color:#303030; text-decoration:none;"><strong>Les 4 raisons de changer vos fen&#234;tres :</strong></a></td>
+        <td width="11" height="38" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-grey-right.jpg" width="11" height="38" style="display:block;" border="0" alt=" "/></td>
+      </tr>
+    </table>
+
+    <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="11" height="123" bgcolor="#f2f2f2" colspan="1"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-grey-left.jpg" width="11" height="123" style="display:block;" border="0" alt=" "/></td>
+        <td width="173" height="123" bgcolor="#f2f2f2" colspan="1" valign="middle">
+          <a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=11" style="font-family:Arial,sans-serif; font-size:15px; color:#a6d304; text-transform:uppercase; margin-right:7px; margin-left:7px; text-decoration:none;"><strong>Economies</strong></a>
+          <p style="font-family:Verdana,sans-serif; font-size:11px; color:#303030; margin-right:7px; margin-left:7px;">R&#233;duisez votre consommation d'&#233;nergie et faites des &#233;conomies sur le long terme.</p>
+          <p style="text-align:right; margin:0;"><a style="font-family:Verdana,sans-serif; font-size:11px; color:#f77f00; margin-right:7px; margin-left:7px;" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=12"><b>> Plus d'&#233;conomies</b></a></p>
+        </td>
+        <td width="3" height="123" bgcolor="#f2f2f2" colspan="1"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/line.jpg" width="3" height="123" style="display:block;" border="0" alt=" "/></td>
+        <td width="172" height="123" bgcolor="#f2f2f2" colspan="1" valign="middle">
+          <a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=13" style="font-family:Arial,sans-serif; font-size:15px; color:#a6d304; text-transform:uppercase; margin-right:7px; margin-left:7px; text-decoration:none;"><strong>Isolation</strong></a>
+          <p style="font-family:Verdana,sans-serif; font-size:11px; color:#303030; margin-right:7px; margin-left:7px;">Les fen&#234;tres limitent les nuisances sonores et assurent une meilleure isolation thermique.</p>
+          <p style="text-align:right; margin:0;"><a style="font-family:Verdana,sans-serif; font-size:11px; color:#f77f00; margin-right:7px; margin-left:7px;" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=14"><b>> Plus d'isolation</b></a></p>
+        </td>
+
+        <td width="3" height="123" bgcolor="#f2f2f2" colspan="1"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/line.jpg" width="3" height="123" style="display:block;" border="0" alt=" "/></td>
+        <td width="172" height="123" bgcolor="#f2f2f2" colspan="1" valign="middle">
+          <a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=15" style="font-family:Arial,sans-serif; font-size:15px; color:#a6d304; text-transform:uppercase; margin-right:7px; margin-left:7px; text-decoration:none;"><strong>S&#233;curit&#233;</strong></a>
+          <p style="font-family:Verdana,sans-serif; font-size:11px; color:#303030; margin-right:7px; margin-left:7px;">La s&#233;curit&#233; de votre habitation est primordiale, renforcez-la avec des fen&#234;tres de qualit&#233;.</p>
+          <p style="text-align:right; margin:0;"><a style="font-family:Verdana,sans-serif; font-size:11px; color:#f77f00; margin-right:7px; margin-left:7px;" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=16"><b>> Plus de s&#233;curit&#233;</b></a></p>
+
+        </td>
+        <td width="3" height="123" bgcolor="#f2f2f2" colspan="1"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/line.jpg" width="3" height="123" style="display:block;" border="0" alt=" "/></td>
+        <td width="172" height="123" bgcolor="#f2f2f2" colspan="1" valign="middle">
+          <a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=17" style="font-family:Arial,sans-serif; font-size:15px; color:#a6d304; text-transform:uppercase; margin-right:7px; margin-left:7px; text-decoration:none;"><strong>Esth&#233;tique</strong></a>
+          <p style="font-family:Verdana,sans-serif; font-size:11px; color:#303030; margin-right:7px; margin-left:7px;">Personnalisez votre int&#233;rieur et changez l'esth&#233;tique de votre habitation en un clin d'oeil.</p>
+          <p style="text-align:right; margin:0;"><a style="font-family:Verdana,sans-serif; font-size:11px; color:#f77f00; margin-right:7px; margin-left:7px;" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=18"><b>> Plus d'esth&#233;tique</b></a></p>
+        </td>
+        <td width="11" height="123" bgcolor="#f2f2f2" colspan="1"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-grey-right.jpg" width="11" height="123" style="display:block;" border="0" alt=" "/></td>
+      </tr>
+      <tr>
+        <td width="720" height="30" bgcolor="#f2f2f2" colspan="9"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/spacer-grey-fullwidth.jpg" width="720" height="30" style="display:block;" border="0" alt=" "/></td>
+      </tr>
+    </table>
+
+    <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="11" height="38" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-grey-left.jpg" width="11" height="38" style="display:block;" border="0" alt=" "/></td>
+        <td width="51" height="38" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/fleche-titre.jpg" width="51" height="38" style="display:block;" border="0" alt=" "/></td>
+        <td width="647" height="38" bgcolor="#f2f2f2"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=19" style="font-family:Trebuchet MS,Arial,sans-serif; font-size:24px; color:#303030; text-decoration:none;"><strong>Tous nos artisans sont s&#233;lectionn&#233;s</strong></a></td>
+        <td width="11" height="38" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-grey-right.jpg" width="11" height="38" style="display:block;" border="0" alt=" "/></td>
+      </tr>
+    </table>
+
+    <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="11" height="178" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-grey-left.jpg" width="11" height="178" style="display:block;" border="0" alt=" "/></td>
+
+        <td width="509" height="178" bgcolor="#f2f2f2">
+          <table width="509" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="41" height="22" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/check-liste.jpg" width="41" height="22" style="display:block;" border="0" alt=" "/></td>
+              <td width="468" height="22" bgcolor="#f2f2f2"><span style="font-family:Verdana,sans-serif; font-size:11px; color:#303030;">Situ&#233;s <strong>pr&#232;s de chez vous</strong></span></td>
+            </tr>
+            <tr>
+              <td width="41" height="22" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/check-liste.jpg" width="41" height="22" style="display:block;" border="0" alt=" "/></td>
+              <td width="468" height="22" bgcolor="#f2f2f2"><span style="font-family:Verdana,sans-serif; font-size:11px; color:#303030;"><strong>Disponibles</strong> pour vous proposer un rendez-vous</span></td>
+
+            </tr>
+            <tr>
+              <td width="41" height="22" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/check-liste.jpg" width="41" height="22" style="display:block;" border="0" alt=" "/></td>
+              <td width="468" height="22" bgcolor="#f2f2f2"><span style="font-family:Verdana,sans-serif; font-size:11px; color:#303030;"><strong>Experts</strong> dans leur corps de m&#233;tier, ils sauront &#233;galement vous conseiller</span></td>
+            </tr>
+            <tr>
+              <td width="41" height="22" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/check-liste.jpg" width="41" height="22" style="display:block;" border="0" alt=" "/></td>
+              <td width="468" height="22" bgcolor="#f2f2f2"><span style="font-family:Verdana,sans-serif; font-size:11px; color:#303030;">Ils vous donnent une <strong>r&#233;ponse sous 48 h</strong></span></td>
+            </tr>
+          </table>
+          <table width="509" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="509" height="22" bgcolor="#f2f2f2" colspan="2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/spacer.gif" width="509" height="22" style="display:block;" border="0" alt=" "/></td>
+            </tr>
+            <tr>
+              <td width="190" height="44" bgcolor="#f2f2f2" colspan="1"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/spacer.gif" width="190" height="44" style="display:block;" border="0" alt=" "/></td>
+              <td width="319" height="44" bgcolor="#f77f00" colspan="1" align="center"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=20" style="text-decoration:none; color:#fff; font-family:Trebuchet MS, Arial, sans-serif; font-size:21px;"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/btn-bottom.jpg" width="319" height="44" style="display:block;" border="0" alt="Demandez 3 devis gratuits"/></a></td>
+            </tr>
+            <tr>
+              <td width="509" height="24" bgcolor="#f2f2f2" colspan="2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/spacer.gif" width="509" height="24" style="display:block;" border="0" alt=" "/></td>
+            </tr>
+          </table>
+        </td>
+        <td width="189" height="178" bgcolor="#f2f2f2"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=21" style="text-decoration:none;"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/artisan-devisplus.jpg" width="189" height="178" style="display:block;" border="0" alt=" "/></a></td>
+        <td width="11" height="178" bgcolor="#f2f2f2"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-grey-right.jpg" width="11" height="178" style="display:block;" border="0" alt=" "/></td>
+      </tr>
+    </table>
+
+    <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+
+      <tr>
+        <td width="11" height="27" bgcolor="#a6d304" colspan="1"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-green-left.jpg" width="11" height="27" style="display:block;" border="0" alt=" "/></td>
+        <td width="698" height="27" bgcolor="#a6d304" colspan="1" align="center"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=22" style="font-family:Trebuchet MS,Arial,sans-serif; font-size:16px; color:#303030; text-decoration:none;"><strong><i>DEVIS PLUS : Qualit&#233;, Rapidit&#233;, R&#233;sultat</i></strong></a></td>
+        <td width="11" height="27" bgcolor="#a6d304" colspan="1"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-green-right.jpg" width="11" height="27" style="display:block;" border="0" alt=" "/></td>
+      </tr>
+      <tr>
+        <td width="720" height="20" bgcolor="#dfdfdf" colspan="3"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/spacer-footer-fullwidth.jpg" width="720" height="20" style="display:block;" border="0" alt=" "/></td>
+
+      </tr>
+    </table>
+
+    <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="11" height="27" bgcolor="#dfdfdf"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-footer-left.jpg" width="11" height="27" style="display:block;" border="0" alt=" "/></td>
+        <td width="392" height="27" bgcolor="#dfdfdf" align="right"><strong style="font-family:Trebuchet MS,Arial,sans-serif; font-size:16px; color:#303030;">C'EST FACILE  </strong></td>
+        <td width="306" height="27" bgcolor="#dfdfdf" align="left"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/like.png" width="24" height="24" style="display:block;" border="0" alt=" "/></td>
+        <td width="11" height="27" bgcolor="#dfdfdf"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-footer-right.jpg" width="11" height="27" style="display:block;" border="0" alt=" "/></td>
+      </tr>
+    </table>
+
+    <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="11" height="86" bgcolor="#dfdfdf" colspan="1"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-footer-left.jpg" width="11" height="86" style="display:block;" border="0" alt=" "/></td>
+        <td width="221" height="86" bgcolor="#dfdfdf" colspan="1" align="center"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=23" style="font-family:Trebuchet MS,Arial,sans-serif; font-size:14px; color:#303030; text-decoration:none;">Remplissez le formulaire<br/>en 2 min en d&#233;crivant<br/>votre projet</a></td>
+        <td width="18" height="86" bgcolor="#dfdfdf" colspan="1"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/fleche-footer.jpg" width="18" height="86" style="display:block;" border="0" alt=" "/></td>
+        <td width="218" height="86" bgcolor="#dfdfdf" colspan="1" align="center"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=24" style="font-family:Trebuchet MS,Arial,sans-serif; font-size:14px; color:#303030; text-decoration:none;">3 professionnels qualifi&#233;s<br/>de votre r&#233;gion vous<br/>contactent</a></td>
+        <td width="18" height="86" bgcolor="#dfdfdf" colspan="1"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/fleche-footer.jpg" width="18" height="86" style="display:block;" border="0" alt=" "/></td>
+        <td width="223" height="86" bgcolor="#dfdfdf" colspan="1" align="center"><a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=990&base=4305&visu=1946&sub=&n=25" style="font-family:Trebuchet MS,Arial,sans-serif; font-size:14px; color:#303030; text-decoration:none;">Approfondissez votre<br/>demande avec les<br/>professionnels</a></td>
+        <td width="11" height="86" bgcolor="#dfdfdf" colspan="1"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-footer-right.jpg" width="11" height="86" style="display:block;" border="0" alt=" "/></td>
+
+      </tr>
+      <tr>
+        <td width="720" height="17" bgcolor="#dfdfdf" colspan="7"><img src="http://www.affiliaweb.fr/admin/visuels/990/images1946/shadow-bottom.jpg" width="720" height="17" style="display:block;" border="0" alt=" "/></td>
+      </tr>
+    </table>
+<div style="text-align:left"><p>Conform&eacute;ment &agrave; l'article 34 de la loi d'Informatique et de Libert&eacute;s du 06/01/1978,vous disposez &agrave; tout moment, d'un droit d'acc&eacute;s, de modification, de rectification et de suppression de vos donn&eacute;es vous concerant (art.34 de la loi Informatique et Libert&eacute;s du six janvier mille neuf cent soixante dix huit)</p></div>
+      <div style="text-align:left">Si vous souhaitez etre retir&eacute; de notre liste de diffusion, merci de ce rendre sur <a href="http://www.monde-voyages.com/compagnes/devisplus.alarme/un.php?email=M291111&cmp=4" style="padding:0;margin:0; color:#c5577b;">ce lien</a>.</div>
+
+
+<img src="http://www.affiliaweb.fr/tracking/cpm.php?camp=990&base=4305&visu=1947&sub=" width="1" height="1" border="0" /></body>
+</html>
+Return-Path: <contact@univers-shopping.com.com>
+Received: from mwinf5c35 (mwinf5c35.me-wanadoo.net [10.223.111.85])
+	 by mwinb1e02 with LMTPA;
+	 Mon, 09 Feb 2015 06:05:57 +0100
+X-Sieve: CMU Sieve 2.3
+Received: from univers-shopping.com ([89.36.233.160])
+	by mwinf5c35 with ME
+	id q55w1p00H3UJJFt0155wal; Mon, 09 Feb 2015 06:05:56 +0100
+X-bcc: a.cnda@wanadoo.fr
+X-ME-bounce-domain: wanadoo.fr
+X-ME-engine: default
+X-me-spamcause: (20)(0000)gggruggvucftvghtrhhoucdtuddrfeejkedrieekgddutdcutefuodetggcurfhrohhfihhlvgemucfogfenuceurghilhhouhhtmecugedttdenucgoteeftdelqddtfeculddvtddmnecujfgurhepvfffgggtrffhufeshhdttddttddtjeenucfhrhhomhephffqtfffuceotghonhhtrggtthesuhhnihhvvghrshdqshhhohhpphhinhhgrdgtohhmrdgtohhmqeenucffohhmrghinheprghffhhilhhirgifvggsrdhfrhdpmhhonhguvgdqvhhohigrghgvshdrtghomh
+X-me-spamlevel: not-spam
+X-ME-Helo: univers-shopping.com
+X-ME-IP: 89.36.233.160
+X-ME-Entity: ofr
+Received: from univers-shopping.com (localhost.localdomain [127.0.0.1])
+	by univers-shopping.com (8.14.4/8.14.4) with ESMTP id t1975chf018123
+	for <a.cnda@wanadoo.fr>; Mon, 9 Feb 2015 02:05:39 -0500
+Received: (from root@localhost)
+	by univers-shopping.com (8.14.4/8.14.4/Submit) id t1975cx5018122
+	for a.cnda@wanadoo.fr; Mon, 9 Feb 2015 02:05:38 -0500
+Message-Id: <201502090705.t1975cx5018122@univers-shopping.com>
+To: a.cnda@wanadoo.fr
+Date: Mon, 09 Feb 2015 07:05:38 UTC
+MIME-version: 1.0
+Content-type: text/html; charset=utf-8
+X-Priority: 3
+From: FORD <contact@univers-shopping.com.com>
+Subject: Essayez le Ford C-MAX pres de chez vous
+
+<html>
+<head>
+<title>Venez essayer le Ford C-MAX</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+<body>
+
+<style type="text/css">
+*{margin:0;padding:0;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none; }
+.ReadMsgBody { width: 100%;}
+.ExternalClass {width: 100%;}
+div, p, a, li, td { -webkit-text-size-adjust:none; }
+p {margin:0; padding:0; margin-bottom:0;} 
+table, table td { border-collapse: collapse; }
+@media only screen and (max-width: 640px) {
+	table[class=ContentTable] {width:320px !important;}  
+	table [class=ResponsiveTableLeft] {height:auto !important; width:320px !important;}	
+	table [class=ResponsiveTableLeft] img.quotes, table [class=ResponsiveTableRight] img.quotes {width: 25px !important;}	
+	table [class=ResponsiveTableLeft] .quotes, table [class=ResponsiveTableRight] .quotes {width: 30px !important;}	
+
+	table [class=ResponsiveTableLeft] td {height:auto !important;width: 310px !important;}	 
+	table [class=ResponsiveTableLeft] img {height:auto !important;width: 310px !important;margin: 0 0 0 4px;}
+	table [class=ResponsiveTableRight] {height:auto !important; width:320px !important;margin: 10px 0 0 0px !important;}
+	table [class=ResponsiveTableRight] td {height:auto !important; width:320px !important;}
+	table [class=ResponsiveTableRight] img {height:auto !important; width:150px !important;margin-top:3px}
+
+	table[class*=hide], td[class*=hide], img[class*=hide], p[class*=hide], span[class*=hide] { display:none !important; }
+	.miniimage{margin-left:11px}
+	.MarginBottom{margin:0 0 10px 0 !important;}
+	.minititle{font-size: 20px !important;text-align: center;}
+	.mobi_hide{display:none;}
+}
+</style>
+<table>
+	   <tr>
+            <td align="center" style="text-align:center"><font face="arial" size="1" style="font-size:11px;line-height:40px;color:#8C8C8C; " color="#8C8C8C">Si vous ne parvenez pas &agrave; lire ce message : <a href="http://www.monde-voyages.com/compagnes/ford.mutuel/ford.html" style="color:#000;" color="#000">Cliquez ici.</a></font></td>
+			<td style="clear:both;"></td>
+            </tr>
+	  
+	  </table>
+<p></p>
+<p align="center"><font size="5" face="Arial,Helvetica,sans-serif">Essayez le Ford C-MAX pr&eacute;s de chez vous</font><br>
+<font size="4" face="Arial,Helvetica,sans-serif"><a style="color:#e3060d" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=1">Je r&egrave;serve mon essai</a></font></p>
+
+<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff"><tr><td align="center" style="max-width:640px;">
+<table width="640" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" class="ContentTable"><tr><td align="center">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width:640px;">
+   <tr>
+    <td valign="top" align="center" style="max-width:435px;">
+	<a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=2"><img src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax1.jpg" alt="FORD C-MAX" width="100%" border="0" style="color:#425968;font-weight:bold;font-size:18px;font-family:Arial;text-align:center;display:block;max-width:100%;max-height:70px;"/></a>
+	</td>
+	<td valign="top" align="center" style="max-width:205px;">
+	<a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=3"><img src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax2.jpg" alt="FORD" width="100%" border="0" style="color:#003f7e;font-weight:bold;font-size:18px;font-family:Arial;text-align:center;display:block;max-width:100%;max-height:70px;"/></a>
+	</td>
+	</tr>
+</table>
+	
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width:640px;">
+   <tr>
+    <td valign="top" align="center">
+		<table width="640" border="0" cellpadding="0" cellspacing="0" class="ContentTable">
+		   <tr><td>
+			<table align="left" cellpadding="0" cellspacing="0" border="0" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;" class="ResponsiveTableLeft">
+			  <tr>
+				<td align="left" width="435" style="border:none; mso-border-right-alt:solid #e9eff0 0pt; border-collapse:collapse;">
+					<a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=4"><img src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax5.jpg" alt="Peinture Blanc Glacier" width="435" height="260" border="0" style="background-color:#6b6b6b;color:#ffffff;font-weight:bold;font-size:18px;font-family:Arial;text-align:center;display:block;max-height:260px;"/></a>
+				</td>
+			  </tr>	  
+			</table>
+			<table border="0" cellspacing="0" cellpadding="0" class="ResponsiveTableRight" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;">
+			  <tr>
+				<td align="left" width="205" style="border:none; mso-border-right-alt:solid #e9eff0 0pt; border-collapse:collapse;">
+					<a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=5"><img src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax3.jpg" alt="Tableau de bord" width="205" height="130" class="miniimage mobi_hide" border="0" style="background-color:#666666;color:#eeeeee;font-weight:bold;font-size:18px;font-family:Arial;text-align:center;"/></a>
+
+					<a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=6"><img src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax42.jpg" alt="Si&eacute;ges" width="205" height="130" class="mobi_hide" border="0" style="background-color:#666666;color:#eeeeee;font-weight:bold;font-size:18px;font-family:Arial;text-align:center;"/></a>
+				</td>
+			  </tr>			  
+			</table>
+		</td></tr>
+		</table>
+	</td>
+   </tr>
+   <tr>
+	<td bgcolor="#ffffff" valign="top" align="center">
+		<a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=7"><img src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax6.gif" alt="Je r&egrave;serve mon essai !" border="0" width="100%" style="background-color:#cc0000;color:#eeeeee;font-weight:bold;font-size:18px;font-family:Arial;max-width:532px;max-height:61px;"><br/></a>
+
+		</td>
+   </tr>
+   <tr>
+	<td bgcolor="#ffffff" style="padding:10px;">
+		<a style="color:#000000;text-decoration:none" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=8">
+			<p style="color:#000000;text-decoration:none;font-family:Arial;font-size: 26px;font-weight: bold;" class="minititle">Vivez l'innovation.</p>
+			<p style="color:#000000;text-decoration:none;font-family:Arial;font-size: 12px;font-weight: bold;text-align:justify;">Le Ford C-MAX dispose d'un design attrayant, de technologies avanc&egrave;es, d'un v&egrave;ritable confort et de nombreuses fonctionnalit&egrave;s &agrave; bord. Cette gamme s'impose comme LA r&egrave;f&egrave;rence incontournable sur le march&egrave; des voitures familiales.<br /> </p>
+		</a>
+
+	</td>
+   </tr>
+   <tr>
+	<td bgcolor="#ffffff" align="center">
+		<table width="640" border="0" cellpadding="0" cellspacing="0" class="ContentTable">
+			   <tr><td align="center">
+				<table align="left" cellpadding="0" cellspacing="0" border="0" style="max-width:320px;border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;" class="ResponsiveTableLeft MarginBottom">
+					<tr>
+						<td width="30px" valign="middle" class="quotes"><a style="color:#000000;text-decoration:none" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=9"><img alt="*" src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax72.png" border="0" width="25" height="27" style="background-color:#6b6b6b;" class="quotes" /></a></td>
+						<td width="290px" align="left"><p style="font-family:Arial;font-size: 12px;font-weight: bold;"><a style="color:#000000;text-decoration:none;" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=10">Allumage automatique des phares</a></p></td>
+					</tr>
+					<tr>		
+						<td valign="middle" class="quotes"><a style="color:#000000;text-decoration:none" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=11"><img alt="*" src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax72.png" border="0" width="25" height="27" style="background-color:#6b6b6b;" class="quotes" /></a></td>
+						<td align="left"><p style="font-family:Arial;font-size: 12px;font-weight: bold;"><a style="color:#000000;text-decoration:none" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=12"> <br />Ford Active Park Assist<br /> </a></p></td>
+
+					</tr>
+					<tr>		
+						<td valign="middle" class="quotes"><a style="color:#000000;text-decoration:none" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=13"><img alt="*" src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax72.png" border="0" width="25" height="27" style="background-color:#6b6b6b;" class="quotes" /></a></td>
+						<td align="left"><p style="font-family:Arial;font-size: 12px;font-weight: bold;"><a style="color:#000000;text-decoration:none" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=14">Syst&eacute;me de d&egrave;tection des angles morts (BLIS)</a></p></td>	
+					</tr>
+				</table>
+				<table border="0" cellspacing="0" cellpadding="0" class="ResponsiveTableRight" style="max-width:320px;border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;">
+
+					<tr>
+						<td width="30px" valign="middle" class="quotes"><a style="color:#000000;text-decoration:none" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=15"><img alt="*" src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax72.png" border="0" width="25" height="27" style="background-color:#6b6b6b;" class="quotes" /></a></td>
+						<td width="290px" align="left"><p style="font-family:Arial;font-size: 12px;font-weight: bold;"><a style="color:#000000;text-decoration:none" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=16">T&egrave;moin de bouclage des ceintures de s&egrave;curit&egrave;</a></p></td>
+					</tr>
+					<tr>		
+						<td valign="middle" class="quotes"><a style="color:#000000;text-decoration:none" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=17"><img alt="*" src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax72.png" border="0" width="25" height="27" style="background-color:#6b6b6b;" class="quotes" /></a></td>
+						<td align="left"><p style="font-family:Arial;font-size: 12px;font-weight: bold;"><a style="color:#000000;text-decoration:none" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=18"> <br />Syst&eacute;me Start & Stop<br /> </a></p></td>
+					</tr>
+					<tr>		
+						<td valign="middle" class="quotes"><a style="color:#000000;text-decoration:none" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=19"><img alt="*" src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax72.png" border="0" width="25" height="27" style="background-color:#6b6b6b;" class="quotes" /></a></td>
+						<td align="left"><p style="font-family:Arial;font-size: 12px;font-weight: bold;"><a style="color:#000000;text-decoration:none" href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=20">Nouveau syst&eacute;me Ford SYNC avec Applink. Technologie mains-libres avanc&egrave;e</a></p></td>	
+					</tr>						  
+				</table>
+			</td></tr>
+		</table>
+	</td>
+   </tr>
+   <tr>
+	<td bgcolor="#ffffff" valign="top" align="center">
+		<a href="http://www.affiliaweb.fr/tracking/cpc.php?camp=968&base=4303&visu=2598&sub=M285906&nom=&prenom=&civilite=&email=&codepostal=&adresse=&telephone=&n=21"><br/><img src="http://www.affiliaweb.fr/admin/visuels/968/images2598/cmax6.gif" alt="Je r&egrave;serve mon essai !" border="0" width="100%" style="background-color:#cc0000;color:#eeeeee;font-weight:bold;font-size:18px;font-family:Arial;max-width:532px;max-height:61px;"><br/></a>
+		</td>
 .
 

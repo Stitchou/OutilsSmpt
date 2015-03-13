@@ -1,5 +1,7 @@
 #include "envoyermail.h"
 #include "ui_envoyermail.h"
+#include <QFileDialog>
+#include <QFileInfo>
 
 EnvoyerMail::EnvoyerMail(QWidget *parent) :
     QDialog(parent),
@@ -8,6 +10,7 @@ EnvoyerMail::EnvoyerMail(QWidget *parent) :
     ui->setupUi(this);
     connect(ui->annuler,SIGNAL(clicked()),this,SLOT(close()));
     connect(ui->valider,SIGNAL(clicked()),this,SLOT(valider()));
+    connect(ui->parcourir,SIGNAL(clicked()),this,SLOT(parcourir()));
 }
 
 EnvoyerMail::~EnvoyerMail()
@@ -25,6 +28,20 @@ void EnvoyerMail::showEvent(QShowEvent *event)
 
 void EnvoyerMail::valider()
 {
-    emit envoyerParams(ui->destinataire->text(),ui->sujet->text(),ui->body->toPlainText());
+    emit envoyerParams(ui->destinataire->text(),ui->sujet->text()
+                       ,ui->body->toPlainText(),ui->piece->text());
     this->close();
 }
+
+void EnvoyerMail::parcourir()
+{
+    QString files;
+    files = QFileDialog::getOpenFileName (this,"Emplacement",QDir::currentPath());
+
+    if ( ! files.isEmpty() )
+    {
+        QFileInfo informations(files);
+        ui->piece->setText(informations.filePath());
+    }
+}
+
