@@ -1838,3 +1838,460 @@ vendredi 13 mars 2015   19:40:59
 
  ---------------------- 
  fin 
+
+
+
+lundi 16 mars 2015   20:12:46
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d69 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d69 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=416
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+* We are completely uploaded and fine
+< 250 2.0.0 4KCr1q00B1fz2qx03KCrp8 mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+lundi 16 mars 2015   20:18:20
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d69 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d69 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=517
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 4KJR1q00p1fz2qx03KJR7k mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+lundi 16 mars 2015   20:22:08
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d69 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d69 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=476
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 4KNC1q00M1fz2qx03KNDuS mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+lundi 16 mars 2015   20:30:28
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d69 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d69 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=69465
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 4KWZ1q00F1fz2qx03KWZdy mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+lundi 16 mars 2015   20:41:57
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d69 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d69 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=534
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 4Ki21q00L1fz2qx03Ki2HB mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+lundi 16 mars 2015   20:43:06
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d69 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d69 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=526
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 4KjB1q0011fz2qx03KjBY9 mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+lundi 16 mars 2015   20:46:14
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d69 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d69 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=526
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 4KmK1q0051fz2qx03KmKG6 mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+lundi 16 mars 2015   20:59:10
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d69 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d69 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=477
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 4KzF1q00V1fz2qx03KzFl2 mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+lundi 16 mars 2015   21:00:12
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d69 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d69 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr> SIZE=473
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 4L0H1q00d1fz2qx03L0Jy0 mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+lundi 16 mars 2015   22:52:45
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d01 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d01 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr>
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 4Msp1q00L1fz2qx03MsqNT mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+lundi 16 mars 2015   22:53:58
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d01 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d01 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr>
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.Fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 4Mu31q00A1fz2qx03Mu3Yz mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 
+
+
+
+lundi 16 mars 2015   23:37:03
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.86...
+* Connected to smtp.orange.fr (193.252.22.86) port 587 (#0)
+< 220 mwinf5d01 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d01 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr>
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 4Nd81q00D1fz2qx03Nd8cu mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 

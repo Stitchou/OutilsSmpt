@@ -48,6 +48,7 @@ private:
     void reformater();
     void envoyerMail();
     void ecrirelog(int mode = 0);
+
 private slots:
     void readOutput();
 };
