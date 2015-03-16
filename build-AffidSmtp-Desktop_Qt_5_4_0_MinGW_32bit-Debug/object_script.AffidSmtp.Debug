@@ -12,12 +12,10 @@ INPUT(
 ./debug\mimecontentformatter.o
 ./debug\mimefile.o
 ./debug\mimehtml.o
-./debug\mimeinlinefile.o
 ./debug\mimemessage.o
 ./debug\mimemultipart.o
 ./debug\mimepart.o
 ./debug\mimetext.o
-./debug\quotedprintable.o
 ./debug\moc_mainwindow.o
 ./debug\moc_configurationsesamvitale.o
 ./debug\moc_configuration.o
@@ -29,8 +27,6 @@ INPUT(
 ./debug\moc_mimeattachment.o
 ./debug\moc_mimecontentformatter.o
 ./debug\moc_mimefile.o
-./debug\moc_mimehtml.o
 ./debug\moc_mimemultipart.o
 ./debug\moc_mimepart.o
-./debug\moc_quotedprintable.o
 );

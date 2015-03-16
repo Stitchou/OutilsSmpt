@@ -2295,3 +2295,41 @@ lundi 16 mars 2015   23:37:03
 
  ---------------------- 
  fin 
+
+
+
+lundi 16 mars 2015   23:42:18
+
+ ENVOI
+ ----------------------
+
+ * Rebuilt URL to: smtp://smtp.orange.fr:587/
+*   Trying 193.252.22.84...
+* Connected to smtp.orange.fr (193.252.22.84) port 587 (#0)
+< 220 mwinf5d01 ME ESMTP server ready
+> EHLO 626-PC
+< 250-mwinf5d01 hello [81.64.60.77], pleased to meet you
+< 250-HELP
+< 250-AUTH LOGIN PLAIN
+< 250-SIZE 44000000
+< 250-ENHANCEDSTATUSCODES
+< 250-8BITMIME
+< 250 OK
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> YS5jbmRh
+< 334 UGFzc3dvcmQ6
+> YWZmaWQyMDA4
+< 235 2.7.0 ... authentication succeeded
+> MAIL FROM:<a.cnda@orange.fr>
+< 250 2.1.0 <a.cnda@orange.fr> sender ok
+> RCPT TO:<e.imbart@hotmail.fr>
+< 250 2.1.5 <e.imbart@hotmail.fr> recipient ok
+> DATA
+< 354 enter mail, end with "." on a line by itself
+< 250 2.0.0 4Ni21q0071fz2qx03Ni2Kx mail accepted for delivery
+* Connection #0 to host smtp.orange.fr left intact
+
+
+ ---------------------- 
+ fin 

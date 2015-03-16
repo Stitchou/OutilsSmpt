@@ -31,12 +31,10 @@ SOURCES += main.cpp\
     smtpQt/mimecontentformatter.cpp \
     smtpQt/mimefile.cpp \
     smtpQt/mimehtml.cpp \
-    smtpQt/mimeinlinefile.cpp \
     smtpQt/mimemessage.cpp \
     smtpQt/mimemultipart.cpp \
     smtpQt/mimepart.cpp \
-    smtpQt/mimetext.cpp \
-    smtpQt/quotedprintable.cpp
+    smtpQt/mimetext.cpp
 
 HEADERS  += mainwindow.h \
     dialogue/configurationsesamvitale.h \
@@ -49,13 +47,10 @@ HEADERS  += mainwindow.h \
     smtpQt/mimeattachment.h \
     smtpQt/mimecontentformatter.h \
     smtpQt/mimefile.h \
-    smtpQt/mimehtml.h \
-    smtpQt/mimeinlinefile.h \
     smtpQt/mimemessage.h \
     smtpQt/mimemultipart.h \
     smtpQt/mimepart.h \
     smtpQt/mimetext.h \
-    smtpQt/quotedprintable.h \
     smtpQt/SmtpMime
 
 FORMS    += mainwindow.ui \

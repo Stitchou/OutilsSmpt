@@ -56,12 +56,10 @@ SOURCES       = ..\AffidSmtp\main.cpp \
 		..\AffidSmtp\smtpQt\mimecontentformatter.cpp \
 		..\AffidSmtp\smtpQt\mimefile.cpp \
 		..\AffidSmtp\smtpQt\mimehtml.cpp \
-		..\AffidSmtp\smtpQt\mimeinlinefile.cpp \
 		..\AffidSmtp\smtpQt\mimemessage.cpp \
 		..\AffidSmtp\smtpQt\mimemultipart.cpp \
 		..\AffidSmtp\smtpQt\mimepart.cpp \
-		..\AffidSmtp\smtpQt\mimetext.cpp \
-		..\AffidSmtp\smtpQt\quotedprintable.cpp release\moc_mainwindow.cpp \
+		..\AffidSmtp\smtpQt\mimetext.cpp release\moc_mainwindow.cpp \
 		release\moc_configurationsesamvitale.cpp \
 		release\moc_configuration.cpp \
 		release\moc_curlinterprete.cpp \
@@ -72,10 +70,8 @@ SOURCES       = ..\AffidSmtp\main.cpp \
 		release\moc_mimeattachment.cpp \
 		release\moc_mimecontentformatter.cpp \
 		release\moc_mimefile.cpp \
-		release\moc_mimehtml.cpp \
 		release\moc_mimemultipart.cpp \
-		release\moc_mimepart.cpp \
-		release\moc_quotedprintable.cpp
+		release\moc_mimepart.cpp
 OBJECTS       = release/main.o \
 		release/mainwindow.o \
 		release/configurationsesamvitale.o \
@@ -89,12 +85,10 @@ OBJECTS       = release/main.o \
 		release/mimecontentformatter.o \
 		release/mimefile.o \
 		release/mimehtml.o \
-		release/mimeinlinefile.o \
 		release/mimemessage.o \
 		release/mimemultipart.o \
 		release/mimepart.o \
 		release/mimetext.o \
-		release/quotedprintable.o \
 		release/moc_mainwindow.o \
 		release/moc_configurationsesamvitale.o \
 		release/moc_configuration.o \
@@ -106,10 +100,8 @@ OBJECTS       = release/main.o \
 		release/moc_mimeattachment.o \
 		release/moc_mimecontentformatter.o \
 		release/moc_mimefile.o \
-		release/moc_mimehtml.o \
 		release/moc_mimemultipart.o \
-		release/moc_mimepart.o \
-		release/moc_quotedprintable.o
+		release/moc_mimepart.o
 
 DIST          =  ..\AffidSmtp\mainwindow.h \
 		..\AffidSmtp\dialogue\configurationsesamvitale.h \
@@ -122,13 +114,10 @@ DIST          =  ..\AffidSmtp\mainwindow.h \
 		..\AffidSmtp\smtpQt\mimeattachment.h \
 		..\AffidSmtp\smtpQt\mimecontentformatter.h \
 		..\AffidSmtp\smtpQt\mimefile.h \
-		..\AffidSmtp\smtpQt\mimehtml.h \
-		..\AffidSmtp\smtpQt\mimeinlinefile.h \
 		..\AffidSmtp\smtpQt\mimemessage.h \
 		..\AffidSmtp\smtpQt\mimemultipart.h \
 		..\AffidSmtp\smtpQt\mimepart.h \
 		..\AffidSmtp\smtpQt\mimetext.h \
-		..\AffidSmtp\smtpQt\quotedprintable.h \
 		..\AffidSmtp\smtpQt\SmtpMime ..\AffidSmtp\main.cpp \
 		..\AffidSmtp\mainwindow.cpp \
 		..\AffidSmtp\dialogue\configurationsesamvitale.cpp \
@@ -142,12 +131,10 @@ DIST          =  ..\AffidSmtp\mainwindow.h \
 		..\AffidSmtp\smtpQt\mimecontentformatter.cpp \
 		..\AffidSmtp\smtpQt\mimefile.cpp \
 		..\AffidSmtp\smtpQt\mimehtml.cpp \
-		..\AffidSmtp\smtpQt\mimeinlinefile.cpp \
 		..\AffidSmtp\smtpQt\mimemessage.cpp \
 		..\AffidSmtp\smtpQt\mimemultipart.cpp \
 		..\AffidSmtp\smtpQt\mimepart.cpp \
-		..\AffidSmtp\smtpQt\mimetext.cpp \
-		..\AffidSmtp\smtpQt\quotedprintable.cpp
+		..\AffidSmtp\smtpQt\mimetext.cpp
 QMAKE_TARGET  = AffidSmtp
 DESTDIR        = release\ #avoid trailing-slash linebreak
 TARGET         = AffidSmtp.exe
@@ -186,7 +173,7 @@ dist:
 	$(ZIP) AffidSmtp.zip $(SOURCES) $(DIST) ..\AffidSmtp\AffidSmtp.pro E:\Qt\5.4\mingw491_32\mkspecs\features\spec_pre.prf E:\Qt\5.4\mingw491_32\mkspecs\qdevice.pri E:\Qt\5.4\mingw491_32\mkspecs\features\device_config.prf E:\Qt\5.4\mingw491_32\mkspecs\common\shell-win32.conf E:\Qt\5.4\mingw491_32\mkspecs\qconfig.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_axbase.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_axbase_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_axcontainer.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_axcontainer_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_axserver.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_axserver_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_bluetooth.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_bluetooth_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_bootstrap_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_clucene_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_concurrent.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_concurrent_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_core.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_core_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_declarative.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_declarative_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_designer.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_designer_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_designercomponents_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_enginio.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_enginio_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_gui.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_gui_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_help.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_help_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_location.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_location_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_multimedia.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_multimedia_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_multimediawidgets.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_network.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_network_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_nfc.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_nfc_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_opengl.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_opengl_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_openglextensions.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_openglextensions_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_platformsupport_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_positioning.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_positioning_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_printsupport.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_printsupport_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_qml.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_qml_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_qmldevtools_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_qmltest.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_qmltest_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_quick.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_quick_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_quickparticles_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_quickwidgets.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_quickwidgets_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_script.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_script_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_scripttools.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_scripttools_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_sensors.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_sensors_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_serialport.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_serialport_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_sql.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_sql_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_svg.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_svg_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_testlib.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_testlib_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_uitools.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_uitools_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webchannel.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webchannel_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webkit.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webkit_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webkitwidgets.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webkitwidgets_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_websockets.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_websockets_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webview.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webview_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_widgets.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_widgets_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_winextras.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_winextras_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_xml.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_xml_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_xmlpatterns.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri E:\Qt\5.4\mingw491_32\mkspecs\features\qt_functions.prf E:\Qt\5.4\mingw491_32\mkspecs\features\qt_config.prf E:\Qt\5.4\mingw491_32\mkspecs\features\win32\qt_config.prf E:\Qt\5.4\mingw491_32\mkspecs\win32-g++\qmake.conf E:\Qt\5.4\mingw491_32\mkspecs\features\spec_post.prf E:\Qt\5.4\mingw491_32\mkspecs\features\exclusive_builds.prf E:\Qt\5.4\mingw491_32\mkspecs\features\default_pre.prf E:\Qt\5.4\mingw491_32\mkspecs\features\win32\default_pre.prf E:\Qt\5.4\mingw491_32\mkspecs\features\resolve_config.prf E:\Qt\5.4\mingw491_32\mkspecs\features\exclusive_builds_post.prf E:\Qt\5.4\mingw491_32\mkspecs\features\default_post.prf E:\Qt\5.4\mingw491_32\mkspecs\features\build_pass.prf E:\Qt\5.4\mingw491_32\mkspecs\features\win32\rtti.prf E:\Qt\5.4\mingw491_32\mkspecs\features\precompile_header.prf E:\Qt\5.4\mingw491_32\mkspecs\features\warn_on.prf E:\Qt\5.4\mingw491_32\mkspecs\features\qt.prf E:\Qt\5.4\mingw491_32\mkspecs\features\resources.prf E:\Qt\5.4\mingw491_32\mkspecs\features\moc.prf E:\Qt\5.4\mingw491_32\mkspecs\features\win32\opengl.prf E:\Qt\5.4\mingw491_32\mkspecs\features\uic.prf E:\Qt\5.4\mingw491_32\mkspecs\features\win32\windows.prf E:\Qt\5.4\mingw491_32\mkspecs\features\testcase_targets.prf E:\Qt\5.4\mingw491_32\mkspecs\features\exceptions.prf E:\Qt\5.4\mingw491_32\mkspecs\features\yacc.prf E:\Qt\5.4\mingw491_32\mkspecs\features\lex.prf ..\AffidSmtp\AffidSmtp.pro E:/Qt/5.4/mingw491_32/lib/qtmain.prl E:/Qt/5.4/mingw491_32/lib/Qt5Core.prl E:/Qt/5.4/mingw491_32/lib/Qt5Widgets.prl E:/Qt/5.4/mingw491_32/lib/Qt5Gui.prl  NO_PCH_SOURCES RESOURCES HEADERS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\main.o release\mainwindow.o release\configurationsesamvitale.o release\configuration.o release\curlinterprete.o release\progression.o release\traitementthread.o release\envoyermail.o release\emailaddress.o release\mimeattachment.o release\mimecontentformatter.o release\mimefile.o release\mimehtml.o release\mimeinlinefile.o release\mimemessage.o release\mimemultipart.o release\mimepart.o release\mimetext.o release\quotedprintable.o release\moc_mainwindow.o release\moc_configurationsesamvitale.o release\moc_configuration.o release\moc_curlinterprete.o release\moc_progression.o release\moc_traitementthread.o release\moc_envoyermail.o release\moc_emailaddress.o release\moc_mimeattachment.o release\moc_mimecontentformatter.o release\moc_mimefile.o release\moc_mimehtml.o release\moc_mimemultipart.o release\moc_mimepart.o release\moc_quotedprintable.o
+	-$(DEL_FILE) release\main.o release\mainwindow.o release\configurationsesamvitale.o release\configuration.o release\curlinterprete.o release\progression.o release\traitementthread.o release\envoyermail.o release\emailaddress.o release\mimeattachment.o release\mimecontentformatter.o release\mimefile.o release\mimehtml.o release\mimemessage.o release\mimemultipart.o release\mimepart.o release\mimetext.o release\moc_mainwindow.o release\moc_configurationsesamvitale.o release\moc_configuration.o release\moc_curlinterprete.o release\moc_progression.o release\moc_traitementthread.o release\moc_envoyermail.o release\moc_emailaddress.o release\moc_mimeattachment.o release\moc_mimecontentformatter.o release\moc_mimefile.o release\moc_mimemultipart.o release\moc_mimepart.o
 
 distclean: clean 
 	-$(DEL_FILE) $(DESTDIR_TARGET)
@@ -202,9 +189,9 @@ compiler_no_pch_compiler_make_all:
 compiler_no_pch_compiler_clean:
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: release/moc_mainwindow.cpp release/moc_configurationsesamvitale.cpp release/moc_configuration.cpp release/moc_curlinterprete.cpp release/moc_progression.cpp release/moc_traitementthread.cpp release/moc_envoyermail.cpp release/moc_emailaddress.cpp release/moc_mimeattachment.cpp release/moc_mimecontentformatter.cpp release/moc_mimefile.cpp release/moc_mimehtml.cpp release/moc_mimemultipart.cpp release/moc_mimepart.cpp release/moc_quotedprintable.cpp
+compiler_moc_header_make_all: release/moc_mainwindow.cpp release/moc_configurationsesamvitale.cpp release/moc_configuration.cpp release/moc_curlinterprete.cpp release/moc_progression.cpp release/moc_traitementthread.cpp release/moc_envoyermail.cpp release/moc_emailaddress.cpp release/moc_mimeattachment.cpp release/moc_mimecontentformatter.cpp release/moc_mimefile.cpp release/moc_mimemultipart.cpp release/moc_mimepart.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) release\moc_mainwindow.cpp release\moc_configurationsesamvitale.cpp release\moc_configuration.cpp release\moc_curlinterprete.cpp release\moc_progression.cpp release\moc_traitementthread.cpp release\moc_envoyermail.cpp release\moc_emailaddress.cpp release\moc_mimeattachment.cpp release\moc_mimecontentformatter.cpp release\moc_mimefile.cpp release\moc_mimehtml.cpp release\moc_mimemultipart.cpp release\moc_mimepart.cpp release\moc_quotedprintable.cpp
+	-$(DEL_FILE) release\moc_mainwindow.cpp release\moc_configurationsesamvitale.cpp release\moc_configuration.cpp release\moc_curlinterprete.cpp release\moc_progression.cpp release\moc_traitementthread.cpp release\moc_envoyermail.cpp release\moc_emailaddress.cpp release\moc_mimeattachment.cpp release\moc_mimecontentformatter.cpp release\moc_mimefile.cpp release\moc_mimemultipart.cpp release\moc_mimepart.cpp
 release/moc_mainwindow.cpp: E:/Qt/5.4/mingw491_32/include/QtWidgets/QMainWindow \
 		E:/Qt/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
 		E:/Qt/5.4/mingw491_32/include/QtWidgets/qwidget.h \
@@ -1033,63 +1020,6 @@ release/moc_mimefile.cpp: ../AffidSmtp/smtpQt/mimepart.h \
 		../AffidSmtp/smtpQt/mimefile.h
 	E:\Qt\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IE:/Qt/5.4/mingw491_32/mkspecs/win32-g++ -IF:/Documents/GitHub/OutilsSmpt/AffidSmtp -I/curllib -I/smtpQt -IE:/Qt/5.4/mingw491_32/include -IE:/Qt/5.4/mingw491_32/include/QtWidgets -IE:/Qt/5.4/mingw491_32/include/QtGui -IE:/Qt/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\smtpQt\mimefile.h -o release\moc_mimefile.cpp
 
-release/moc_mimehtml.cpp: ../AffidSmtp/smtpQt/mimetext.h \
-		../AffidSmtp/smtpQt/mimepart.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QObject \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobject.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobjectdefs.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qnamespace.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qglobal.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qconfig.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qfeatures.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qsystemdetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qprocessordetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcompilerdetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qtypeinfo.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qtypetraits.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qsysinfo.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qlogging.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qflags.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbasicatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_bootstrap.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qgenericatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_msvc.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv7.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv6.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv5.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_ia64.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_mips.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_x86.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_cxx11.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_gcc.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_unix.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qglobalstatic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qmutex.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qnumeric.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobjectdefs_impl.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qstring.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qchar.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbytearray.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qrefcount.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qarraydata.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qstringbuilder.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qlist.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qalgorithms.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qiterator.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbytearraylist.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcoreevent.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qscopedpointer.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qmetatype.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qvarlengtharray.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcontainerfwd.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qisenum.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobject_impl.h \
-		../AffidSmtp/smtpQt/mimecontentformatter.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QByteArray \
-		../AffidSmtp/smtpQt/mimehtml.h
-	E:\Qt\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IE:/Qt/5.4/mingw491_32/mkspecs/win32-g++ -IF:/Documents/GitHub/OutilsSmpt/AffidSmtp -I/curllib -I/smtpQt -IE:/Qt/5.4/mingw491_32/include -IE:/Qt/5.4/mingw491_32/include/QtWidgets -IE:/Qt/5.4/mingw491_32/include/QtGui -IE:/Qt/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\smtpQt\mimehtml.h -o release\moc_mimehtml.cpp
-
 release/moc_mimemultipart.cpp: ../AffidSmtp/smtpQt/mimepart.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/QObject \
 		E:/Qt/5.4/mingw491_32/include/QtCore/qobject.h \
@@ -1200,60 +1130,6 @@ release/moc_mimepart.cpp: E:/Qt/5.4/mingw491_32/include/QtCore/QObject \
 		E:/Qt/5.4/mingw491_32/include/QtCore/QByteArray \
 		../AffidSmtp/smtpQt/mimepart.h
 	E:\Qt\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IE:/Qt/5.4/mingw491_32/mkspecs/win32-g++ -IF:/Documents/GitHub/OutilsSmpt/AffidSmtp -I/curllib -I/smtpQt -IE:/Qt/5.4/mingw491_32/include -IE:/Qt/5.4/mingw491_32/include/QtWidgets -IE:/Qt/5.4/mingw491_32/include/QtGui -IE:/Qt/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\smtpQt\mimepart.h -o release\moc_mimepart.cpp
-
-release/moc_quotedprintable.cpp: E:/Qt/5.4/mingw491_32/include/QtCore/QObject \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobject.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobjectdefs.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qnamespace.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qglobal.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qconfig.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qfeatures.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qsystemdetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qprocessordetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcompilerdetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qtypeinfo.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qtypetraits.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qsysinfo.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qlogging.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qflags.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbasicatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_bootstrap.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qgenericatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_msvc.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv7.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv6.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv5.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_ia64.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_mips.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_x86.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_cxx11.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_gcc.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_unix.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qglobalstatic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qmutex.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qnumeric.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobjectdefs_impl.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qstring.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qchar.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbytearray.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qrefcount.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qarraydata.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qstringbuilder.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qlist.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qalgorithms.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qiterator.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbytearraylist.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcoreevent.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qscopedpointer.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qmetatype.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qvarlengtharray.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcontainerfwd.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qisenum.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobject_impl.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QByteArray \
-		../AffidSmtp/smtpQt/quotedprintable.h
-	E:\Qt\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IE:/Qt/5.4/mingw491_32/mkspecs/win32-g++ -IF:/Documents/GitHub/OutilsSmpt/AffidSmtp -I/curllib -I/smtpQt -IE:/Qt/5.4/mingw491_32/include -IE:/Qt/5.4/mingw491_32/include/QtWidgets -IE:/Qt/5.4/mingw491_32/include/QtGui -IE:/Qt/5.4/mingw491_32/include/QtCore -I. ..\AffidSmtp\smtpQt\quotedprintable.h -o release\moc_quotedprintable.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -2152,15 +2028,13 @@ release/traitementthread.o: ../AffidSmtp/traitementthread.cpp ../AffidSmtp/trait
 		../AffidSmtp/smtpQt/mimepart.h \
 		../AffidSmtp/smtpQt/mimecontentformatter.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/QByteArray \
-		../AffidSmtp/smtpQt/mimehtml.h \
-		../AffidSmtp/smtpQt/mimetext.h \
 		../AffidSmtp/smtpQt/mimeattachment.h \
 		../AffidSmtp/smtpQt/mimefile.h \
 		../AffidSmtp/smtpQt/mimemessage.h \
 		../AffidSmtp/smtpQt/mimemultipart.h \
 		../AffidSmtp/smtpQt/emailaddress.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/QList \
-		../AffidSmtp/smtpQt/mimeinlinefile.h
+		../AffidSmtp/smtpQt/mimetext.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\traitementthread.o ..\AffidSmtp\traitementthread.cpp
 
 release/envoyermail.o: ../AffidSmtp/dialogue/envoyermail.cpp ../AffidSmtp/dialogue/envoyermail.h \
@@ -2561,123 +2435,8 @@ release/mimefile.o: ../AffidSmtp/smtpQt/mimefile.cpp ../AffidSmtp/smtpQt/mimefil
 		E:/Qt/5.4/mingw491_32/include/QtCore/qpair.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mimefile.o ..\AffidSmtp\smtpQt\mimefile.cpp
 
-release/mimehtml.o: ../AffidSmtp/smtpQt/mimehtml.cpp ../AffidSmtp/smtpQt/mimehtml.h \
-		../AffidSmtp/smtpQt/mimetext.h \
-		../AffidSmtp/smtpQt/mimepart.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QObject \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobject.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobjectdefs.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qnamespace.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qglobal.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qconfig.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qfeatures.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qsystemdetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qprocessordetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcompilerdetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qtypeinfo.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qtypetraits.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qsysinfo.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qlogging.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qflags.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbasicatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_bootstrap.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qgenericatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_msvc.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv7.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv6.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv5.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_ia64.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_mips.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_x86.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_cxx11.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_gcc.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_unix.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qglobalstatic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qmutex.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qnumeric.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobjectdefs_impl.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qstring.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qchar.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbytearray.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qrefcount.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qarraydata.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qstringbuilder.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qlist.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qalgorithms.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qiterator.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbytearraylist.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcoreevent.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qscopedpointer.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qmetatype.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qvarlengtharray.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcontainerfwd.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qisenum.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobject_impl.h \
-		../AffidSmtp/smtpQt/mimecontentformatter.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QByteArray
+release/mimehtml.o: ../AffidSmtp/smtpQt/mimehtml.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mimehtml.o ..\AffidSmtp\smtpQt\mimehtml.cpp
-
-release/mimeinlinefile.o: ../AffidSmtp/smtpQt/mimeinlinefile.cpp ../AffidSmtp/smtpQt/mimeinlinefile.h \
-		../AffidSmtp/smtpQt/mimefile.h \
-		../AffidSmtp/smtpQt/mimepart.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QObject \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobject.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobjectdefs.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qnamespace.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qglobal.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qconfig.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qfeatures.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qsystemdetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qprocessordetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcompilerdetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qtypeinfo.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qtypetraits.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qsysinfo.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qlogging.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qflags.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbasicatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_bootstrap.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qgenericatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_msvc.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv7.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv6.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv5.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_ia64.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_mips.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_x86.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_cxx11.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_gcc.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_unix.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qglobalstatic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qmutex.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qnumeric.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobjectdefs_impl.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qstring.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qchar.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbytearray.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qrefcount.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qarraydata.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qstringbuilder.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qlist.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qalgorithms.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qiterator.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbytearraylist.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcoreevent.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qscopedpointer.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qmetatype.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qvarlengtharray.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcontainerfwd.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qisenum.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobject_impl.h \
-		../AffidSmtp/smtpQt/mimecontentformatter.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QByteArray \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QFile \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qfile.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qfiledevice.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qiodevice.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mimeinlinefile.o ..\AffidSmtp\smtpQt\mimeinlinefile.cpp
 
 release/mimemessage.o: ../AffidSmtp/smtpQt/mimemessage.cpp ../AffidSmtp/smtpQt/mimemessage.h \
 		../AffidSmtp/smtpQt/mimepart.h \
@@ -2740,8 +2499,7 @@ release/mimemessage.o: ../AffidSmtp/smtpQt/mimemessage.cpp ../AffidSmtp/smtpQt/m
 		E:/Qt/5.4/mingw491_32/include/QtCore/qdatetime.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/qshareddata.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/qhash.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qpair.h \
-		../AffidSmtp/smtpQt/quotedprintable.h
+		E:/Qt/5.4/mingw491_32/include/QtCore/qpair.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mimemessage.o ..\AffidSmtp\smtpQt\mimemessage.cpp
 
 release/mimemultipart.o: ../AffidSmtp/smtpQt/mimemultipart.cpp ../AffidSmtp/smtpQt/mimemultipart.h \
@@ -2859,8 +2617,7 @@ release/mimepart.o: ../AffidSmtp/smtpQt/mimepart.cpp ../AffidSmtp/smtpQt/mimepar
 		E:/Qt/5.4/mingw491_32/include/QtCore/qisenum.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/qobject_impl.h \
 		../AffidSmtp/smtpQt/mimecontentformatter.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QByteArray \
-		../AffidSmtp/smtpQt/quotedprintable.h
+		E:/Qt/5.4/mingw491_32/include/QtCore/QByteArray
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mimepart.o ..\AffidSmtp\smtpQt\mimepart.cpp
 
 release/mimetext.o: ../AffidSmtp/smtpQt/mimetext.cpp ../AffidSmtp/smtpQt/mimetext.h \
@@ -2919,60 +2676,6 @@ release/mimetext.o: ../AffidSmtp/smtpQt/mimetext.cpp ../AffidSmtp/smtpQt/mimetex
 		E:/Qt/5.4/mingw491_32/include/QtCore/QByteArray
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mimetext.o ..\AffidSmtp\smtpQt\mimetext.cpp
 
-release/quotedprintable.o: ../AffidSmtp/smtpQt/quotedprintable.cpp ../AffidSmtp/smtpQt/quotedprintable.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QObject \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobject.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobjectdefs.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qnamespace.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qglobal.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qconfig.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qfeatures.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qsystemdetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qprocessordetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcompilerdetection.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qtypeinfo.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qtypetraits.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qsysinfo.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qlogging.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qflags.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbasicatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_bootstrap.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qgenericatomic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_msvc.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv7.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv6.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_armv5.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_ia64.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_mips.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_x86.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_cxx11.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_gcc.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qatomic_unix.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qglobalstatic.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qmutex.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qnumeric.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobjectdefs_impl.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qstring.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qchar.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbytearray.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qrefcount.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qarraydata.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qstringbuilder.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qlist.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qalgorithms.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qiterator.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qbytearraylist.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcoreevent.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qscopedpointer.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qmetatype.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qvarlengtharray.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcontainerfwd.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qisenum.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qobject_impl.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QByteArray
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\quotedprintable.o ..\AffidSmtp\smtpQt\quotedprintable.cpp
-
 release/moc_mainwindow.o: release/moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_mainwindow.o release\moc_mainwindow.cpp
 
@@ -3006,17 +2709,11 @@ release/moc_mimecontentformatter.o: release/moc_mimecontentformatter.cpp
 release/moc_mimefile.o: release/moc_mimefile.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_mimefile.o release\moc_mimefile.cpp
 
-release/moc_mimehtml.o: release/moc_mimehtml.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_mimehtml.o release\moc_mimehtml.cpp
-
 release/moc_mimemultipart.o: release/moc_mimemultipart.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_mimemultipart.o release\moc_mimemultipart.cpp
 
 release/moc_mimepart.o: release/moc_mimepart.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_mimepart.o release\moc_mimepart.cpp
-
-release/moc_quotedprintable.o: release/moc_quotedprintable.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_quotedprintable.o release\moc_quotedprintable.cpp
 
 ####### Install
 
