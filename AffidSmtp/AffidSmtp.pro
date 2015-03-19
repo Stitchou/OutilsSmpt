@@ -30,7 +30,6 @@ SOURCES += main.cpp\
     smtpQt/mimeattachment.cpp \
     smtpQt/mimecontentformatter.cpp \
     smtpQt/mimefile.cpp \
-    smtpQt/mimehtml.cpp \
     smtpQt/mimemessage.cpp \
     smtpQt/mimemultipart.cpp \
     smtpQt/mimepart.cpp \

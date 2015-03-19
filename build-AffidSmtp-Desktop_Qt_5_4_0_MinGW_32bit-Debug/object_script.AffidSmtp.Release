@@ -11,7 +11,6 @@ INPUT(
 ./release\mimeattachment.o
 ./release\mimecontentformatter.o
 ./release\mimefile.o
-./release\mimehtml.o
 ./release\mimemessage.o
 ./release\mimemultipart.o
 ./release\mimepart.o

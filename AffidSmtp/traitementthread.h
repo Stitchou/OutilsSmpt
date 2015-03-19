@@ -39,7 +39,7 @@ private:
     Configuration * configServeur;
     QFile *fic;
     QString contenue;
-    //QString mailFrom, mailTo, mailBody, mailObject,pieceJointe;
+    QString mailFrom, mailTo, mailBody, mailObject,pieceJointe;
     QProcess * cmd;
 
     void creerListeDeMail();

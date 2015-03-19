@@ -20,11 +20,10 @@
 #define SMTPMIME_H
 
 #include "mimepart.h"
-#include "mimehtml.h"
 #include "mimeattachment.h"
 #include "mimemessage.h"
 #include "mimetext.h"
-#include "mimeinlinefile.h"
 #include "mimefile.h"
+#include "quotedprintable.h"
 
 #endif // SMTPMIME_H

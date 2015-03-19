@@ -62,6 +62,8 @@ public:
     QLineEdit *fournisseur;
     QCheckBox *popAUTH;
     QCheckBox *smtpSSL;
+    QLabel *label_13;
+    QLineEdit *adelie;
     QGroupBox *groupBox_5;
     QCheckBox *traces;
     QPushButton *tester;
@@ -70,7 +72,7 @@ public:
     {
         if (ConfigurationSesamVitale->objectName().isEmpty())
             ConfigurationSesamVitale->setObjectName(QStringLiteral("ConfigurationSesamVitale"));
-        ConfigurationSesamVitale->resize(753, 699);
+        ConfigurationSesamVitale->resize(753, 717);
         ConfigurationSesamVitale->setStyleSheet(QLatin1String("QGroupBox\n"
 "{\n"
 "	border: 0.5px solid;\n"
@@ -97,11 +99,11 @@ public:
         label->setAlignment(Qt::AlignCenter);
         groupBox_2 = new QGroupBox(ConfigurationSesamVitale);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
-        groupBox_2->setGeometry(QRect(20, 160, 591, 451));
+        groupBox_2->setGeometry(QRect(20, 160, 591, 481));
         groupBox_2->setAlignment(Qt::AlignCenter);
         groupBox_3 = new QGroupBox(groupBox_2);
         groupBox_3->setObjectName(QStringLiteral("groupBox_3"));
-        groupBox_3->setGeometry(QRect(70, 40, 151, 401));
+        groupBox_3->setGeometry(QRect(30, 40, 191, 431));
         groupBox_3->setAlignment(Qt::AlignCenter);
         radioButton = new QRadioButton(groupBox_3);
         radioButton->setObjectName(QStringLiteral("radioButton"));
@@ -109,7 +111,7 @@ public:
         radioButton->setChecked(true);
         groupBox_4 = new QGroupBox(groupBox_2);
         groupBox_4->setObjectName(QStringLiteral("groupBox_4"));
-        groupBox_4->setGeometry(QRect(230, 40, 351, 401));
+        groupBox_4->setGeometry(QRect(230, 40, 351, 431));
         groupBox_4->setAlignment(Qt::AlignCenter);
         label_2 = new QLabel(groupBox_4);
         label_2->setObjectName(QStringLiteral("label_2"));
@@ -137,16 +139,16 @@ public:
         label_9->setGeometry(QRect(30, 230, 61, 21));
         label_10 = new QLabel(groupBox_4);
         label_10->setObjectName(QStringLiteral("label_10"));
-        label_10->setGeometry(QRect(30, 370, 61, 21));
+        label_10->setGeometry(QRect(30, 400, 61, 21));
         label_11 = new QLabel(groupBox_4);
         label_11->setObjectName(QStringLiteral("label_11"));
-        label_11->setGeometry(QRect(190, 370, 71, 21));
+        label_11->setGeometry(QRect(190, 400, 71, 21));
         smtpAuth = new QCheckBox(groupBox_4);
         smtpAuth->setObjectName(QStringLiteral("smtpAuth"));
-        smtpAuth->setGeometry(QRect(70, 290, 251, 17));
+        smtpAuth->setGeometry(QRect(70, 320, 251, 17));
         parametresConnexion = new QCheckBox(groupBox_4);
         parametresConnexion->setObjectName(QStringLiteral("parametresConnexion"));
-        parametresConnexion->setGeometry(QRect(70, 330, 261, 17));
+        parametresConnexion->setGeometry(QRect(70, 360, 261, 17));
         identifiant = new QLineEdit(groupBox_4);
         identifiant->setObjectName(QStringLiteral("identifiant"));
         identifiant->setGeometry(QRect(150, 50, 191, 20));
@@ -175,10 +177,10 @@ public:
         smtpPort->setReadOnly(true);
         identifiantconnexion = new QLineEdit(groupBox_4);
         identifiantconnexion->setObjectName(QStringLiteral("identifiantconnexion"));
-        identifiantconnexion->setGeometry(QRect(90, 370, 81, 20));
+        identifiantconnexion->setGeometry(QRect(90, 400, 81, 20));
         passwordConnexion = new QLineEdit(groupBox_4);
         passwordConnexion->setObjectName(QStringLiteral("passwordConnexion"));
-        passwordConnexion->setGeometry(QRect(260, 370, 81, 20));
+        passwordConnexion->setGeometry(QRect(260, 400, 81, 20));
         profil = new QLineEdit(groupBox_4);
         profil->setObjectName(QStringLiteral("profil"));
         profil->setGeometry(QRect(150, 20, 191, 20));
@@ -187,13 +189,19 @@ public:
         fournisseur->setGeometry(QRect(150, 110, 191, 20));
         popAUTH = new QCheckBox(groupBox_4);
         popAUTH->setObjectName(QStringLiteral("popAUTH"));
-        popAUTH->setGeometry(QRect(70, 270, 251, 17));
+        popAUTH->setGeometry(QRect(70, 300, 251, 17));
         smtpSSL = new QCheckBox(groupBox_4);
         smtpSSL->setObjectName(QStringLiteral("smtpSSL"));
-        smtpSSL->setGeometry(QRect(70, 310, 251, 17));
+        smtpSSL->setGeometry(QRect(70, 340, 251, 17));
+        label_13 = new QLabel(groupBox_4);
+        label_13->setObjectName(QStringLiteral("label_13"));
+        label_13->setGeometry(QRect(30, 260, 101, 16));
+        adelie = new QLineEdit(groupBox_4);
+        adelie->setObjectName(QStringLiteral("adelie"));
+        adelie->setGeometry(QRect(150, 260, 191, 20));
         groupBox_5 = new QGroupBox(ConfigurationSesamVitale);
         groupBox_5->setObjectName(QStringLiteral("groupBox_5"));
-        groupBox_5->setGeometry(QRect(20, 630, 591, 61));
+        groupBox_5->setGeometry(QRect(20, 650, 591, 61));
         groupBox_5->setAlignment(Qt::AlignCenter);
         traces = new QCheckBox(groupBox_5);
         traces->setObjectName(QStringLiteral("traces"));
@@ -238,7 +246,7 @@ public:
 " INTERNET KIT AFFID 1.0", 0));
         groupBox_2->setTitle(QApplication::translate("ConfigurationSesamVitale", "Connexion au R\303\251seau SESAM - Vitale", 0));
         groupBox_3->setTitle(QApplication::translate("ConfigurationSesamVitale", "Fournisseur", 0));
-        radioButton->setText(QApplication::translate("ConfigurationSesamVitale", "WANADOO SANTE", 0));
+        radioButton->setText(QApplication::translate("ConfigurationSesamVitale", "Internet / ADSL", 0));
         groupBox_4->setTitle(QApplication::translate("ConfigurationSesamVitale", "Profil", 0));
         label_2->setText(QApplication::translate("ConfigurationSesamVitale", "Profil de connexion", 0));
         label_3->setText(QApplication::translate("ConfigurationSesamVitale", "Identifiant du compte", 0));
@@ -255,6 +263,7 @@ public:
         label_12->setText(QApplication::translate("ConfigurationSesamVitale", "Port SMTP", 0));
         popAUTH->setText(QApplication::translate("ConfigurationSesamVitale", "Le serveur POP requiert une connexion s\303\251curis\303\251e", 0));
         smtpSSL->setText(QApplication::translate("ConfigurationSesamVitale", "Le serveur SMTP requiert une connexion SSL", 0));
+        label_13->setText(QApplication::translate("ConfigurationSesamVitale", "Adelie", 0));
         groupBox_5->setTitle(QApplication::translate("ConfigurationSesamVitale", "Programmation de la t\303\251l\303\251transmission automatique", 0));
         traces->setText(QApplication::translate("ConfigurationSesamVitale", "Activer la trace de connexion", 0));
         tester->setText(QApplication::translate("ConfigurationSesamVitale", "Tester", 0));

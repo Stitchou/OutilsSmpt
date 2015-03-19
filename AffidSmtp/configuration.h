@@ -61,6 +61,9 @@ public:
     bool getLogActions() const;
     void setLogActions(bool value);
 
+    QString getAdelie() const;
+    void setAdelie(const QString &value);
+
 private:
     static Configuration * configurationInstance;
     Configuration();
@@ -74,8 +77,9 @@ private:
     QString adressSMTP;
     QString identifiantConnexion;
     QString mostDePasseConnexion;
-    QString     portPOP;
-    QString     portSMTP;
+    QString portPOP;
+    QString portSMTP;
+    QString adelie;
 
     bool    requiertAuthentification;
     bool    parametresConnexionIdentique;

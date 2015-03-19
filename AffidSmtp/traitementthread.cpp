@@ -19,9 +19,6 @@ int taille;
 int valeur;
 static QStringList toto;
 
-QString PJ;
-QString mailFrom, mailTo, mailBody, mailObject,pieceJointe;
-
 CURL *curl;
 CURLcode res = CURLE_OK;
 
@@ -139,45 +136,6 @@ void TraitementThread::reformater()
         // Add an another attachment
         message.addPart(new MimeAttachment(new QFile(pieceJointe)));
 
-        /*formatage = "From: <"+mailFrom+">\r\n";
-        flux << formatage;
-        formatage = "To: <"+mailTo+">\r\n";
-        flux << formatage;
-        formatage = "Subject: "+mailObject+"\r\n";
-        flux << formatage;
-        //flux << "\r\n";
-       // flux << formatage;
-        //flux <<"\r\n";
-
-
-        QFile fil(pieceJointe);
-
-        //opening the file
-        if (!fil.open(QIODevice::ReadOnly))
-        {
-            emit("piece jointe  inaccessible");
-            return;
-        }
-
-        QTextStream fluxLecture(&fil);
-
-        QString lecture = fluxLecture.readAll();
-        QByteArray array = lecture.toUtf8().toBase64();
-        QString filename = pieceJointe;
-        while(filename.contains("/"))
-        {
-            filename.remove(0,filename.indexOf("/")+1);
-        }
-        flux << "Content-Type: application/x-msdownload; name=\""+ filename+ "\"\r\n";
-
-        flux << "Content-Transfer-Encoding: base64\r\n";
-
-        flux << "Content-Disposition: attachment; filename=\"" +filename+ "\"\r\n";
-
-        flux << array.toBase64() + "\r\n";
-
-        flux << "";
-        fil.close();*/
         flux << message.toString();
         fic.close();
     }
@@ -239,10 +197,7 @@ void TraitementThread::envoyerMail()
         curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
 
         curl_easy_setopt(curl, CURLOPT_READFUNCTION, read_callback);
-        curl_easy_setopt(curl, CURLOPT_READDATA, hd_src);/*
-        curl_easy_setopt(curl, CURLOPT_INFILESIZE, file_size);
-        curl_easy_setopt(curl, CURLOPT_READFUNCTION, fileBuf_source);
-        curl_easy_setopt(curl, CURLOPT_READDATA, &file_upload_ctx);*/
+        curl_easy_setopt(curl, CURLOPT_READDATA, hd_src);
         curl_easy_setopt(curl, CURLOPT_UPLOAD, 1L);
 
         if(configServeur->getLogActions())
@@ -318,7 +273,6 @@ void TraitementThread::setParams(QString a_sujet, QString a_body, QString a_to, 
     mailTo = a_to;
     mailObject = a_sujet;
     pieceJointe = piece;
-    PJ = piece;
 }
 
 void TraitementThread::creerListeDeMail()
@@ -426,7 +380,8 @@ void TraitementThread::decouperListe()
        if(thatAll == 3)
            break;
     }
-    contenue += from + subject + to ;
+    if(subject.contains(configServeur->getAdelie()))
+        contenue += from + subject + to ;
     toto.clear();
 }
 

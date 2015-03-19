@@ -19,7 +19,7 @@
 #include "mimemessage.h"
 
 #include <QDateTime>
-#include "quotedprintable.h"
+#include "smtpQt/quotedprintable.h"
 #include <typeinfo>
 
 /* [1] Constructors and Destructors */
@@ -165,7 +165,7 @@ QString MimeMessage::toString()
             mime += " =?utf-8?B?" + QByteArray().append(sender->getName()).toBase64() + "?=";
             break;
         case MimePart::QuotedPrintable:
-            mime += " =?utf-8?Q?" + QuotedPrintable::encode(QByteArray().append(sender->getName())).replace(' ', "_").replace(':',"=3A") + "?=";
+            //mime += " =?utf-8?Q?" + QuotedPrintable::encode(QByteArray().append(sender->getName())).replace(' ', "_").replace(':',"=3A") + "?=";
             break;
         default:
             mime += " " + sender->getName();
@@ -190,7 +190,7 @@ QString MimeMessage::toString()
                 mime += " =?utf-8?B?" + QByteArray().append((*it)->getName()).toBase64() + "?=";
                 break;
             case MimePart::QuotedPrintable:
-                mime += " =?utf-8?Q?" + QuotedPrintable::encode(QByteArray().append((*it)->getName())).replace(' ', "_").replace(':',"=3A") + "?=";
+                //mime += " =?utf-8?Q?" + QuotedPrintable::encode(QByteArray().append((*it)->getName())).replace(' ', "_").replace(':',"=3A") + "?=";
                 break;
             default:
                 mime += " " + (*it)->getName();
@@ -217,7 +217,7 @@ QString MimeMessage::toString()
                 mime += " =?utf-8?B?" + QByteArray().append((*it)->getName()).toBase64() + "?=";
                 break;
             case MimePart::QuotedPrintable:
-                mime += " =?utf-8?Q?" + QuotedPrintable::encode(QByteArray().append((*it)->getName())).replace(' ', "_").replace(':',"=3A") + "?=";
+                //mime += " =?utf-8?Q?" + QuotedPrintable::encode(QByteArray().append((*it)->getName())).replace(' ', "_").replace(':',"=3A") + "?=";
                 break;
             default:
                 mime += " " + (*it)->getName();
@@ -240,7 +240,7 @@ QString MimeMessage::toString()
         mime += "=?utf-8?B?" + QByteArray().append(subject).toBase64() + "?=";
         break;
     case MimePart::QuotedPrintable:
-        mime += "=?utf-8?Q?" + QuotedPrintable::encode(QByteArray().append(subject)).replace(' ', "_").replace(':',"=3A") + "?=";
+        //mime += "=?utf-8?Q?" + QuotedPrintable::encode(QByteArray().append(subject)).replace(' ', "_").replace(':',"=3A") + "?=";
         break;
     default:
         mime += subject;

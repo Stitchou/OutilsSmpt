@@ -30,10 +30,23 @@ Configuration::Configuration()
     mostDePasseConnexion    = "";
     portPOP                 = "";
     portSMTP                = "";
+    adelie = "";
 
     requiertAuthentification     = true;
     parametresConnexionIdentique = true;
+
+
 }
+QString Configuration::getAdelie() const
+{
+    return adelie;
+}
+
+void Configuration::setAdelie(const QString &value)
+{
+    adelie = value;
+}
+
 bool Configuration::getLogActions() const
 {
     return logActions;
@@ -119,6 +132,7 @@ void Configuration::lireConfigurationServeur()
     configurationInstance->setIdentifiantConnexion(fichierIni->value(tr("RESEAU/IDENTIFIANT_CONNEXION"),"").toString());
     configurationInstance->setMostDePasseConnexion(fichierIni->value(tr("RESEAU/MOT_DE_PASSE_CONNEXION"),"").toString());
     configurationInstance->setLogActions(fichierIni->value(tr("RESEAU/LOG"),"false").toBool());
+    configurationInstance->setAdelie(fichierIni->value(tr("RESEAU/NUM_ADELIE"),"").toString());
 }
 
 QString Configuration::getPortSMTP() const

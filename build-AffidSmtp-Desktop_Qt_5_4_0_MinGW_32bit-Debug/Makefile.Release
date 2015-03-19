@@ -55,7 +55,6 @@ SOURCES       = ..\AffidSmtp\main.cpp \
 		..\AffidSmtp\smtpQt\mimeattachment.cpp \
 		..\AffidSmtp\smtpQt\mimecontentformatter.cpp \
 		..\AffidSmtp\smtpQt\mimefile.cpp \
-		..\AffidSmtp\smtpQt\mimehtml.cpp \
 		..\AffidSmtp\smtpQt\mimemessage.cpp \
 		..\AffidSmtp\smtpQt\mimemultipart.cpp \
 		..\AffidSmtp\smtpQt\mimepart.cpp \
@@ -84,7 +83,6 @@ OBJECTS       = release/main.o \
 		release/mimeattachment.o \
 		release/mimecontentformatter.o \
 		release/mimefile.o \
-		release/mimehtml.o \
 		release/mimemessage.o \
 		release/mimemultipart.o \
 		release/mimepart.o \
@@ -130,7 +128,6 @@ DIST          =  ..\AffidSmtp\mainwindow.h \
 		..\AffidSmtp\smtpQt\mimeattachment.cpp \
 		..\AffidSmtp\smtpQt\mimecontentformatter.cpp \
 		..\AffidSmtp\smtpQt\mimefile.cpp \
-		..\AffidSmtp\smtpQt\mimehtml.cpp \
 		..\AffidSmtp\smtpQt\mimemessage.cpp \
 		..\AffidSmtp\smtpQt\mimemultipart.cpp \
 		..\AffidSmtp\smtpQt\mimepart.cpp \
@@ -173,7 +170,7 @@ dist:
 	$(ZIP) AffidSmtp.zip $(SOURCES) $(DIST) ..\AffidSmtp\AffidSmtp.pro E:\Qt\5.4\mingw491_32\mkspecs\features\spec_pre.prf E:\Qt\5.4\mingw491_32\mkspecs\qdevice.pri E:\Qt\5.4\mingw491_32\mkspecs\features\device_config.prf E:\Qt\5.4\mingw491_32\mkspecs\common\shell-win32.conf E:\Qt\5.4\mingw491_32\mkspecs\qconfig.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_axbase.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_axbase_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_axcontainer.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_axcontainer_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_axserver.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_axserver_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_bluetooth.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_bluetooth_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_bootstrap_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_clucene_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_concurrent.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_concurrent_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_core.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_core_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_declarative.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_declarative_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_designer.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_designer_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_designercomponents_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_enginio.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_enginio_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_gui.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_gui_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_help.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_help_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_location.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_location_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_multimedia.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_multimedia_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_multimediawidgets.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_network.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_network_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_nfc.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_nfc_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_opengl.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_opengl_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_openglextensions.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_openglextensions_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_platformsupport_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_positioning.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_positioning_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_printsupport.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_printsupport_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_qml.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_qml_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_qmldevtools_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_qmltest.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_qmltest_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_quick.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_quick_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_quickparticles_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_quickwidgets.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_quickwidgets_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_script.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_script_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_scripttools.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_scripttools_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_sensors.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_sensors_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_serialport.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_serialport_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_sql.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_sql_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_svg.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_svg_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_testlib.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_testlib_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_uitools.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_uitools_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webchannel.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webchannel_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webkit.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webkit_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webkitwidgets.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webkitwidgets_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_websockets.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_websockets_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webview.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_webview_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_widgets.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_widgets_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_winextras.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_winextras_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_xml.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_xml_private.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_xmlpatterns.pri E:\Qt\5.4\mingw491_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri E:\Qt\5.4\mingw491_32\mkspecs\features\qt_functions.prf E:\Qt\5.4\mingw491_32\mkspecs\features\qt_config.prf E:\Qt\5.4\mingw491_32\mkspecs\features\win32\qt_config.prf E:\Qt\5.4\mingw491_32\mkspecs\win32-g++\qmake.conf E:\Qt\5.4\mingw491_32\mkspecs\features\spec_post.prf E:\Qt\5.4\mingw491_32\mkspecs\features\exclusive_builds.prf E:\Qt\5.4\mingw491_32\mkspecs\features\default_pre.prf E:\Qt\5.4\mingw491_32\mkspecs\features\win32\default_pre.prf E:\Qt\5.4\mingw491_32\mkspecs\features\resolve_config.prf E:\Qt\5.4\mingw491_32\mkspecs\features\exclusive_builds_post.prf E:\Qt\5.4\mingw491_32\mkspecs\features\default_post.prf E:\Qt\5.4\mingw491_32\mkspecs\features\build_pass.prf E:\Qt\5.4\mingw491_32\mkspecs\features\win32\rtti.prf E:\Qt\5.4\mingw491_32\mkspecs\features\precompile_header.prf E:\Qt\5.4\mingw491_32\mkspecs\features\warn_on.prf E:\Qt\5.4\mingw491_32\mkspecs\features\qt.prf E:\Qt\5.4\mingw491_32\mkspecs\features\resources.prf E:\Qt\5.4\mingw491_32\mkspecs\features\moc.prf E:\Qt\5.4\mingw491_32\mkspecs\features\win32\opengl.prf E:\Qt\5.4\mingw491_32\mkspecs\features\uic.prf E:\Qt\5.4\mingw491_32\mkspecs\features\win32\windows.prf E:\Qt\5.4\mingw491_32\mkspecs\features\testcase_targets.prf E:\Qt\5.4\mingw491_32\mkspecs\features\exceptions.prf E:\Qt\5.4\mingw491_32\mkspecs\features\yacc.prf E:\Qt\5.4\mingw491_32\mkspecs\features\lex.prf ..\AffidSmtp\AffidSmtp.pro E:/Qt/5.4/mingw491_32/lib/qtmain.prl E:/Qt/5.4/mingw491_32/lib/Qt5Core.prl E:/Qt/5.4/mingw491_32/lib/Qt5Widgets.prl E:/Qt/5.4/mingw491_32/lib/Qt5Gui.prl  NO_PCH_SOURCES RESOURCES HEADERS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\main.o release\mainwindow.o release\configurationsesamvitale.o release\configuration.o release\curlinterprete.o release\progression.o release\traitementthread.o release\envoyermail.o release\emailaddress.o release\mimeattachment.o release\mimecontentformatter.o release\mimefile.o release\mimehtml.o release\mimemessage.o release\mimemultipart.o release\mimepart.o release\mimetext.o release\moc_mainwindow.o release\moc_configurationsesamvitale.o release\moc_configuration.o release\moc_curlinterprete.o release\moc_progression.o release\moc_traitementthread.o release\moc_envoyermail.o release\moc_emailaddress.o release\moc_mimeattachment.o release\moc_mimecontentformatter.o release\moc_mimefile.o release\moc_mimemultipart.o release\moc_mimepart.o
+	-$(DEL_FILE) release\main.o release\mainwindow.o release\configurationsesamvitale.o release\configuration.o release\curlinterprete.o release\progression.o release\traitementthread.o release\envoyermail.o release\emailaddress.o release\mimeattachment.o release\mimecontentformatter.o release\mimefile.o release\mimemessage.o release\mimemultipart.o release\mimepart.o release\mimetext.o release\moc_mainwindow.o release\moc_configurationsesamvitale.o release\moc_configuration.o release\moc_curlinterprete.o release\moc_progression.o release\moc_traitementthread.o release\moc_envoyermail.o release\moc_emailaddress.o release\moc_mimeattachment.o release\moc_mimecontentformatter.o release\moc_mimefile.o release\moc_mimemultipart.o release\moc_mimepart.o
 
 distclean: clean 
 	-$(DEL_FILE) $(DESTDIR_TARGET)
@@ -1382,51 +1379,6 @@ release/mainwindow.o: ../AffidSmtp/mainwindow.cpp ../AffidSmtp/mainwindow.h \
 		E:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		E:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
 		ui_mainwindow.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QAction \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qaction.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qactiongroup.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QApplication \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qeventloop.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QGroupBox \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qgroupbox.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qframe.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractscrollarea.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qitemselectionmodel.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemdelegate.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qstyleoption.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractspinbox.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qvalidator.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qregularexpression.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qslider.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractslider.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qstyle.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QStatusBar \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qstatusbar.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../AffidSmtp/dialogue/configurationsesamvitale.h \
 		E:/Qt/5.4/mingw491_32/include/QtWidgets/QDialog \
 		E:/Qt/5.4/mingw491_32/include/QtWidgets/qdialog.h \
@@ -1539,55 +1491,6 @@ release/configurationsesamvitale.o: ../AffidSmtp/dialogue/configurationsesamvita
 		E:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		E:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		ui_configurationsesamvitale.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QAction \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qaction.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qactiongroup.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QApplication \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qeventloop.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QCheckBox \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qcheckbox.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QGroupBox \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qgroupbox.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qframe.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractscrollarea.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qitemselectionmodel.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemdelegate.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qstyleoption.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractspinbox.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qvalidator.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qregularexpression.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qslider.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractslider.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qstyle.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qpen.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QRadioButton \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qradiobutton.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/QSettings \
 		E:/Qt/5.4/mingw491_32/include/QtCore/qsettings.h \
 		../AffidSmtp/configuration.h \
@@ -1895,43 +1798,7 @@ release/progression.o: ../AffidSmtp/dialogue/progression.cpp ../AffidSmtp/dialog
 		E:/Qt/5.4/mingw491_32/include/QtCore/qfiledevice.h \
 		E:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		E:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
-		ui_progression.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QAction \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qaction.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qactiongroup.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QApplication \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qeventloop.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractscrollarea.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qframe.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qitemselectionmodel.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemdelegate.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qstyleoption.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractspinbox.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qvalidator.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qregularexpression.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qslider.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractslider.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qstyle.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QProgressBar \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qprogressbar.h
+		ui_progression.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\progression.o ..\AffidSmtp\dialogue\progression.cpp
 
 release/traitementthread.o: ../AffidSmtp/traitementthread.cpp ../AffidSmtp/traitementthread.h \
@@ -2034,7 +1901,8 @@ release/traitementthread.o: ../AffidSmtp/traitementthread.cpp ../AffidSmtp/trait
 		../AffidSmtp/smtpQt/mimemultipart.h \
 		../AffidSmtp/smtpQt/emailaddress.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/QList \
-		../AffidSmtp/smtpQt/mimetext.h
+		../AffidSmtp/smtpQt/mimetext.h \
+		../AffidSmtp/smtpQt/quotedprintable.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\traitementthread.o ..\AffidSmtp\traitementthread.cpp
 
 release/envoyermail.o: ../AffidSmtp/dialogue/envoyermail.cpp ../AffidSmtp/dialogue/envoyermail.h \
@@ -2142,54 +2010,6 @@ release/envoyermail.o: ../AffidSmtp/dialogue/envoyermail.cpp ../AffidSmtp/dialog
 		E:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		E:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		ui_envoyermail.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QAction \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qaction.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qactiongroup.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QApplication \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qeventloop.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QGroupBox \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qgroupbox.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qframe.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractscrollarea.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qitemselectionmodel.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemdelegate.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qstyleoption.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractspinbox.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qvalidator.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qregularexpression.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qslider.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractslider.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qstyle.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qpen.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/QTextEdit \
-		E:/Qt/5.4/mingw491_32/include/QtWidgets/qtextedit.h \
-		E:/Qt/5.4/mingw491_32/include/QtGui/qtextdocument.h \
 		E:/Qt/5.4/mingw491_32/include/QtWidgets/QFileDialog \
 		E:/Qt/5.4/mingw491_32/include/QtWidgets/qfiledialog.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/qdir.h \
@@ -2435,9 +2255,6 @@ release/mimefile.o: ../AffidSmtp/smtpQt/mimefile.cpp ../AffidSmtp/smtpQt/mimefil
 		E:/Qt/5.4/mingw491_32/include/QtCore/qpair.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mimefile.o ..\AffidSmtp\smtpQt\mimefile.cpp
 
-release/mimehtml.o: ../AffidSmtp/smtpQt/mimehtml.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mimehtml.o ..\AffidSmtp\smtpQt\mimehtml.cpp
-
 release/mimemessage.o: ../AffidSmtp/smtpQt/mimemessage.cpp ../AffidSmtp/smtpQt/mimemessage.h \
 		../AffidSmtp/smtpQt/mimepart.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/QObject \
@@ -2499,7 +2316,8 @@ release/mimemessage.o: ../AffidSmtp/smtpQt/mimemessage.cpp ../AffidSmtp/smtpQt/m
 		E:/Qt/5.4/mingw491_32/include/QtCore/qdatetime.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/qshareddata.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/qhash.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/qpair.h
+		E:/Qt/5.4/mingw491_32/include/QtCore/qpair.h \
+		../AffidSmtp/smtpQt/quotedprintable.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mimemessage.o ..\AffidSmtp\smtpQt\mimemessage.cpp
 
 release/mimemultipart.o: ../AffidSmtp/smtpQt/mimemultipart.cpp ../AffidSmtp/smtpQt/mimemultipart.h \
@@ -2617,7 +2435,8 @@ release/mimepart.o: ../AffidSmtp/smtpQt/mimepart.cpp ../AffidSmtp/smtpQt/mimepar
 		E:/Qt/5.4/mingw491_32/include/QtCore/qisenum.h \
 		E:/Qt/5.4/mingw491_32/include/QtCore/qobject_impl.h \
 		../AffidSmtp/smtpQt/mimecontentformatter.h \
-		E:/Qt/5.4/mingw491_32/include/QtCore/QByteArray
+		E:/Qt/5.4/mingw491_32/include/QtCore/QByteArray \
+		../AffidSmtp/smtpQt/quotedprintable.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mimepart.o ..\AffidSmtp\smtpQt\mimepart.cpp
 
 release/mimetext.o: ../AffidSmtp/smtpQt/mimetext.cpp ../AffidSmtp/smtpQt/mimetext.h \

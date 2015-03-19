@@ -202,7 +202,7 @@ void MimePart::prepare()
         mimeString.append(formatter.format(content.toBase64()));
         break;
     case QuotedPrintable:
-        mimeString.append(formatter.format(QuotedPrintable::encode(content), true));
+        //mimeString.append(formatter.format(QuotedPrintable::encode(content), true));
         break;
     }
     mimeString.append("\r\n");
